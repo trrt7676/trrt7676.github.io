@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdn.bootcss.com/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: '微軟正黑體';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #493F4B;
+        }
+        nav{
+            width:100%;
+            background:  #493F4B ;
+        }
+        nav .nav{
+            width:1140px;
+            height: 100px;
+            margin:0 auto;
+            
+        }
+        .navbar ul{
+            height: 100px;
+            float: right;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        .navbar a{
+            display: block;
+            color:#fff;
+            text-decoration: none;
+            margin-right: 40px;
+            font-size: 20px;
+        }
+        .banner{
+            width:1140px;
+            display: flex;
+            margin:0 auto;
+
+        }
+        .banner .biglogo{
+            padding: 60px 50px 0;
+
+            width:30%;
+        }
+        .banner .biglogo img{
+            width:100%;
+           
+        }
+        .banner .bannerimg{
+            width:70%;
+            margin-bottom: 40px;
+           
+            
+        }
+        .banner .bannerimg .swiper-container{
+            width:100%;
+            
+            border-radius:5px;
+            overflow: hidden;
+            
+        }
+       
+        .swiper-container img{
+            width:100%;
+            
+     
+        }
+        section.about{
+            width:100%;
+            background-color: #E2DBD3;
+        }
+        .about{
+            
+            width:1140px;
+            margin:0 auto;
+            padding: 20px;
+        }
+        .about h2{
+            color:#493F4B;
+            margin-bottom: 30px;
+        }
+        .about .item{
+            display: flex;
+            
+        }
+        .about .item .pic{
+            width:50%;
+        }
+        .about .item .pic img{
+            width:100%;
+            box-shadow: 3px 3px 10px rgba(0, 47, 255, 0.3);
+            vertical-align: middle;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .about .item .txt{
+            width:50%;
+            padding: 20px 50px;
+            
+        }
+        .about .item .txt h3{
+            margin-bottom: 30px;
+            color:#806C86;
+        }
+        .about .item .txt p{
+            margin-bottom: 30px;
+            line-height: 2em;
+            font-size: 18px;
+            
+        }
+        section.promotions{
+            width:100%;
+        }
+        .promotions{
+            width:1140px;
+            padding: 20px;
+            margin:0 auto;
+        }
+        .promotions h2{
+            color:#fff;
+            margin-bottom: 20px;
+        }
+        .promotions .news li{
+            color:#D4B6C8;
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            }
+        .promotions .news a{
+            color:#fff;
+            text-decoration: none;
+            display: block;
+            float: right;
+        }
+        section.parallax{
+            width:100%;
+            height: 500px;
+            background:url(img/34.jpg)fixed;
+            background-size: cover;
+            
+            
+        }
+        section.porduct{
+            width:100%;
+
+        }
+        .porduct{
+            padding: 20px;
+            width:1140px;
+            margin:0 auto;
+        }
+        .porduct h2 {
+            margin:30px 0;
+            color:#fff;
+        }
+        .porduct .porductcard{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .porduct .card{
+            width:300px;
+            margin:10px 20px;
+            text-align: center;
+            color:#E2DBD3;
+        }
+        .porduct .card a{
+            display: block;
+            font-size: 20px;
+            margin: 20px 0;
+            text-decoration: none;
+            color:#fff;
+        }
+        .porduct .card p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .porduct .card img{
+            width:100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        footer{
+            width:100%;
+            
+            background-color:#806C86;
+            
+        }
+        .footer{
+            width:1140px;
+            margin:0 auto;
+            padding: 20px;
+            display: flex;
+            
+        }
+        .footer .address{
+            padding: 50px;
+        }
+        .footer .address p{
+            margin-bottom: 15px;
+            color:#fff;
+        }
+        iframe{
+            border-radius: 10px;
+            overflow: hidden;
+            
+            
+        }
+        .totop{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            color:#fff;
+            background-color: #493F4B;
+            border: 3px solid #806C86;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            
+            transition: .5;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">Method of purchase</a></li>
+                    <li><a href="#">Porduct</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="banner">
+            <div class="biglogo">
+                <img src="img/PClogo.png" alt="">
+            </div>
+            <div class="bannerimg">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/b1.jpeg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/b2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/b3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/20.jpg" alt=""></div>
+                    </div>
+                   
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="about"> 
+            <h2>About</h2>
+            <div class="item">
+                <div class="pic">
+                    <img src="img/21.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h3>公司簡介</h3>
+                    <p>中部花卉批發商,經營各種花卉批發與零售屬台中少數的老花店。</p>
+                    <h3>經營理念</h3>
+                    <p>維護舊有客戶關係，開發新的客戶舊雨新知，讓每個顧客都可以找到想要的花材穩定的材料配給補充。</p>
+                </div>
+                
+
+            </div>
+            <div class="item">
+                <div class="txt">
+                    <h3>經營項目</h3>
+                    <p>各種花卉批發與零售、花禮、花束、盆栽、會場佈置<br>
+                        開幕 : 花圈、盆景、開運竹、蝴蝶蘭、盆栽<br>
+                        傳情 : 花束、新娘捧花<br>
+                        喜慶 : 婚禮佈置、會議佈置、商品展示會場佈置<br>
+                        資材類 : 培養土、有機肥料、多肉植物專用土、玻璃花瓶、花器<br>
+                        喪 : 喪禮會場佈置
+                        </p>
+                </div>
+                <div class="pic">
+                    <img src="img/16.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="promotions">
+        <div class="promotions">
+            <h2>Promotions</h2>
+            <ul class="news">
+                <li>星辰，滿天星各色特價中<a href="#">More...</a></li>
+                <li>清明拜拜花束，百合特惠中<a href="#">More...</a></li>
+                <li>母親節康乃馨預訂中<a href="#">More...</a></li>
+            </ul>        
+
+        </div>
+
+    </section>
+    <section class="parallax">
+        
+    </section>
+    <section class="porduct">
+        <div class="porduct">
+            <h2>Porduct</h2>
+            <div class="porductcard">
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/p1.png" alt="">
+                    <a href="#"><h3>鮮花</h3></a>                
+                    <!-- <p>玫瑰 桔梗 百合 菊花</p> -->
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/p2.png" alt="">
+                    <a href="#"><h3>葉材</h3></a>                
+                    <!-- <p>星點木 高山羊齒 麒麟草</p> -->
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/p3.png" alt="">
+                    <a href="#"><h3>乾燥花</h3></a>                   
+                    <!-- <p>棉花 兔尾草 永生花 繡球</p> -->
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/p4.png" alt="">
+                    <a href="#"><h3>耗材器具</h3></a>                  
+                    <!-- <p>海綿 花器 裝飾品 耗材器具</p> -->
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/p5.png" alt="">
+                    <a href="#"><h3>花束</h3></a>                 
+                     <!-- <p>情人節花束 母親節花束 畢業花束</p> -->
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="img/p6.png" alt="">
+                    <a href="#"><h3>佈置</h3></a>                  
+                    <!-- <p>婚禮 會議 餐廳 宴會佈置</p> -->
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.790817797434!2d120.63202551543608!3d24.143983279542528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc500536b4b%3A0x8ba7c17868a9b629!2zNDA45Y-w5Lit5biC5Y2X5bGv5Y2A5rC45pil5p2x5LiD6LevODA56Jmf!5e0!3m2!1szh-TW!2stw!4v1586422445932!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="address">
+                <p>408台中市南屯區永春東七路809號</p>
+                <p>0900-2200</p>
+                <p>04 2380 1432</p>
+                <p>copyright©</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#"><div class="totop">Top</div></a>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          
+          loop: true,
+          autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+          },
+         
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+    
+        AOS.init();
+        window.onscroll = function(){
+            var top = document.querySelector('.totop')
+            var google = document.documentElement.scrollTop;
+            if(google>300){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        }
+      </script>
+</body>
+</html>
