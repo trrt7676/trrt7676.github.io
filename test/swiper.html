@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <title>Document</title>
+    <style>
+    .swiper-container {
+            width: 1200px;
+            height: 400px;
+    }
+    .swiper-container img{
+        width:100%;
+    }
+    .fas{
+        font-size: 50px;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/05.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/06.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/07.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/08.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/10.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/09.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/11.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/04.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/03.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/16.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <i class="fas fa-receipt"></i>
+
+
+    <script src="js/fontawesome-all.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+</body>
+</html>

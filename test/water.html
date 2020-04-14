@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:1200px;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            margin:0 auto;
+        }
+        .txt{
+            width:240px;
+            height: 200px;
+            background-color: #000;
+            color:#fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <script>
+
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+                console.log(myJson)
+               var water = myJson.records.location;
+               for (let index = 0; index < water.length; index++) {
+                   const element = water[index];
+                   
+                   var max = element.weatherElement[4].time[0].parameter.parameterName;
+                  
+                   var min = element.weatherElement[2].time[0].parameter.parameterName;
+                   var ci = element.weatherElement[3].time[0].parameter.parameterName;
+
+                var box = document.querySelector('.box');
+                box.innerHTML +=`
+                <div class="txt">
+                    <p>縣市:${element.locationName}</p>
+                    <p>最高溫:${max}度</p>
+                    <p>最低溫:${min}度</p>
+                    <p>感覺如何:${ci}</p>
+                    
+                </div>`
+
+
+              
+             }
+
+
+            });
+
+
+    </script>
+</body>
+</html>

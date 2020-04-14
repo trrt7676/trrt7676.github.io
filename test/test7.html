@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+ul{
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+   
+    margin:50px auto 0;
+
+}
+ul a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(202, 202, 202);
+    color:rgb(255, 0, 0);
+    font-family: '微軟正黑體';
+    text-decoration: none;
+   
+    line-height: 40px;
+    transition: .5s;
+    border:1px solid #000;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    
+}
+.cont{
+    width:600px;
+    margin: 0 auto;
+}
+.txt{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #000;
+    border-top: 0;
+    padding: 30px;
+   
+}
+.hide{
+    display: none;
+}
+.bd{
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#" id="btnA">按鈕A</a></li>
+        <li><a href="#" id="btnB">按鈕B</a></a></li>
+        <li><a href="#" id="btnC">按鈕C</a></a></li>
+    </ul>
+    <div class="cont">
+        <div class="txt txtA">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.</div>
+        <div class="txt txtB hide">BBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="txt txtC hide">CCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+<script>
+
+
+
+
+
+var btnA = document.querySelector('#btnA');
+var btnB = document.querySelector('#btnB');
+var btnC = document.querySelector('#btnC');
+var txtA = document.querySelector('.txtA');
+var txtB = document.querySelector('.txtB');
+var txtC = document.querySelector('.txtC');
+
+btnA.onclick = function(){
+
+btnA.classList.add('bd');
+btnB.classList.remove('bd');
+btnC.classList.remove('bd');
+txtA.classList.remove('hide');
+txtB.classList.add('hide');
+txtC.classList.add('hide');
+
+}
+
+btnB.onclick = function(){
+
+btnB.classList.add('bd');
+btnA.classList.remove('bd');
+btnC.classList.remove('bd');   
+
+txtA.classList.add('hide');
+txtB.classList.remove('hide');
+txtC.classList.add('hide');
+
+}
+
+btnC.onclick = function(){
+
+btnC.classList.add('bd');
+btnA.classList.remove('bd');
+btnB.classList.remove('bd');   
+
+txtA.classList.add('hide');
+txtB.classList.add('hide');
+txtC.classList.remove('hide');
+
+
+}
+
+
+
+</script>
+</body>
+</html>

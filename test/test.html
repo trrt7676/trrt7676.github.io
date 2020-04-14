@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;}
+    .cont{
+        width:100%;
+        height: 500px;
+        background-color: #777;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width:300px;
+        height: 100%;
+
+    }
+    .card img{
+        width:100%;
+        height: 300px;
+    }
+    .btn{
+        width:100px;
+        height: 50px;
+        background-color:red;
+    }
+</style>
+</head>
+<body>
+
+    <div class="cont">
+        
+
+    </div>
+    <div class="btn"></div>
+    <div class="btn" onclick="XXX(1)">消除</div>
+
+    <script>
+
+var porduct = [
+{
+    name:"mark",
+    food:"apple",
+    age:"50",
+    img:"img/05.jpg"
+},
+{
+    name:"joe",
+    food:"banana",
+    age:"40",
+    img:"img/06.jpg"
+},
+{
+    name:"alex",
+    food:"water",
+    age:"30",
+    img:"img/07.jpg"
+},
+{
+    name:"XXXx",
+    food:"tea",
+    age:"70",
+    img:"img/08.jpg"
+}
+
+]
+
+var cont = document.querySelector('.cont');
+var btn = document.querySelector('.btn');
+
+btn.onclick = function(){
+
+for (let i = 0; i < porduct.length; i++) {
+    var p = porduct[i]
+   cont.innerHTML += `
+        <div class="card">
+            <img src="${p.img}" alt="">
+            <p>姓名:${p.name}</p>
+            <p>年齡:${p.age}</p>
+            <p>愛的食物:${p.food}</p>
+        </div>`
+    
+}
+}
+
+function XXX(){
+    cont.innerHTML = ''
+}
+    </script>
+</body>
+</html>
