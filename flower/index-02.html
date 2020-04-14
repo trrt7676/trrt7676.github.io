@@ -633,20 +633,25 @@
         $(document).ready(function () {
             var hide =  $(window).width();
                 
-                if(hide<767){
+                if( hide < 767 ) {
                     $('.bar').hide();
+                    
                 }else{
                     $('.bar').show();
+                    $('.bar').addClass('d-flex');
                 }
             $(window).resize(function(){
                 var hide =  $(window).width();
               
-                if(hide<767){
+                if( hide < 767 ) {
                     $('.bar').hide();
+                    
 
                 }else{
 
                     $('.bar').show();
+                    $('.bar').addClass('d-flex');
+                    
                  }
 
             });
