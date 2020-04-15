@@ -11,14 +11,14 @@
 $(document).ready(function(){
 
 
-        $('.btnb').on("click",function(){
+        $('.lemon').on("click",function(){
 
             $('.a2').toggleClass('A2');
             $('.a4').toggleClass('A4');
             $('.a1').toggleClass('A1'); 
             $('.a3').toggleClass('A3');
 
-            $('.bar').slideToggle(function(){});
+            $('nav').slideToggle(function(){});
 
 
 
@@ -32,6 +32,9 @@ $(document).ready(function(){
             margin: 0;
             padding: 0;
             
+        }
+        nav{
+            height: 0;
         }
         .box{
             display: flex;
