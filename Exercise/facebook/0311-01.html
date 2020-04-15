@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 100%;
+         
+        }
+        .boxr{
+            float: right;
+            position: relative;
+            }
+        .boxl{
+            float: left;
+            }
+        .box100{
+            width: 250px;
+            height: 250px;
+        }
+        .box150{
+            width: 500px;
+            height: 500px;
+        }
+        .r{
+            background-color: red;
+        }
+        .g{
+            background-color: green;
+        }
+        .b{
+            background-color: blue;
+        }
+        .rigth{
+            float: right;
+            clear: both;
+        }
+        .clear{
+            clear: right;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="boxl">
+            <div class="box100 r x"></div>
+            <div class="box100 g"></div>
+            <div class="box150 b"></div>
+            <div class="box100 r"></div>
+        </div>
+        <div class="boxr">
+            <div class="box150 b"></div>
+            <div class="box100 r rigth"></div>
+            <div class="box100 g rigth"></div>
+            <div class="box150 b clear"></div>
+        </div>
+    </div>
+</body>
+</html>

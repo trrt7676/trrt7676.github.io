@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        
+        $('.txtT h2').css("color","#ddd");
+        $('.txtT p').css("color","#ddd");
+        $(document).scroll(function(){
+            var A = $(window).scrollTop();
+            if(A>0){
+                $('.ss').css("color","red");
+            }else{
+                $('.ss').css("color","#fff");
+            }
+            if(A>500){
+                $('.txtT h2').css("color","red");
+                $('.txtT p').css("color","#333");
+            }else{
+                $('.txtT h2').css("color","#ddd");
+                $('.txtT p').css("color","#ddd");
+            }
+            if(A>700){
+                $('.s').css("color","red");
+                $('.box3').css("opacity",1);
+            }else{
+                $('.s').css("color","#fff");
+                $('.box3').css("opacity",0.1);
+            }
+            if(A>1050){
+                $('.s1').css("color","red");
+            }else{
+                $('.s1').css("color","#000");
+            }
+            if(A>1400){
+                $('.s2').css("color","red");
+            }else{
+                $('.s2').css("color","#fff");
+            }
+            if(A>1850){
+                $('.s3').css("color","red");
+            }else{
+                $('.s3').css("color","#000");
+            }
+            if(A>2200){
+                $('.s4').css("color","red");
+                $('.box5').css("opacity",1);
+            }else{
+                $('.s4').css("color","#000");
+                $('.box5').css("opacity",0.1);
+            }
+
+
+        });
+    });
+      
+       
+
+
+    </script>
+   
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: '微軟正黑體';
+            transition: all 1.2s;
+            
+
+        }
+        :target:before {
+            content: "";
+            display: block;
+            height: 50px;
+            }
+       
+        .box1{
+            width:100%;
+            height: 100vh;
+            position: relative;
+            background: url('https://store.nintendo.com.hk/media/catalog/product/cache/08244de22d08060bc462ed2f13fdcc18/l/f/lf_cn_000.jpg')no-repeat  fixed;
+            background-size:cover;
+            opacity: 0.9;
+            
+
+        }
+        .txt{
+            width:250px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+            background-color: rgb(88, 87, 87);
+            color:#fff;
+            text-align: center;
+            line-height: 60px;
+        }
+        .box5{
+            width:100%;
+            height: 100vh;
+            position: relative;
+            background: url('https://fpscdn.yam.com/world/201807/82/c7/5b59841ab82c7.jpg')no-repeat fixed;
+            background-size: cover;
+            opacity: 0.9;
+        }
+        .txtend{
+            width:250px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+            background-color: rgb(134, 134, 134);
+            color:#fff;
+            text-align: center;
+            line-height: 60px;
+        }
+        .box4{
+            padding: 70px;
+            background-color: rgb(23, 22, 32);
+            color:#000;
+
+        }
+        .box2{
+            padding: 50px 80px;
+            
+        }
+        .txtT h2{
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 5px;
+        }
+        .txtT p{
+            text-align: justify;
+            color:#999;
+        }
+        .box3{
+            height: 400px;
+            background: url('https://pettalk.s3.amazonaws.com/p/img_pool/vRChpXS-pYHEVYh_246636-1600x1030-common-feline-cold-symptoms.jpg')fixed;
+            background-size: cover;
+            position: relative;
+            opacity: 0.9;
+        }
+        .txts{
+            width:300px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto; 
+            color:rgb(255, 255, 255);
+            text-align: center;
+            line-height: 50px;
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: #999;
+            color:black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            
+
+        }
+        .centent{
+            width:900px;
+            margin:0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            margin:15px 0;
+        }
+        nav ul li {
+            padding: 0 30px;
+            
+            font-weight: 900;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color:brown;
+           
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="centent">
+            <ul>
+                <li><a href="#A">貓區塊</a></li>
+                <li><a href="#B">羊區塊</a></li>
+                <li><a href="#C">狗區塊</a></li>
+                <li><a href="#D">牛區塊</a></li>
+                <li><a href="#E">豬區塊</a></li>
+                <li><a href="#F">最上面</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="box1" id="F">
+        <div class="txt">
+            <h1 class="ss">慢慢捲</h1>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="txtT">
+            <h2>PARALLAX DEMO</h2>
+            <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+        </div>
+    </div>
+    <div class="box3" id="A">
+        <div class="txts">
+            <h2 class="s">LESS HEIGHT</h2>
+        </div>
+    </div>
+    <div class="box4" id="B">
+        <p class="s1">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+    <div class="box3" id="C">
+        <div class="txts">
+            <h2 class="s2">SCROLL UP</h2>
+        </div>
+    </div>
+    <div class="box4" id="D">
+        <p class="s3">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+    </div>
+    <div class="box5" id="E">
+        <div class="txtend">
+            <h1 class="s4">捲回去</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

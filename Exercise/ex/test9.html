@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>送出</button>
+    <h1></h1>
+
+
+    <script>
+        var inp = document.querySelector('input');
+        var but = document.querySelector('button');
+        var ans = Math.floor(Math.random()*100)+1;
+        //var ans = 50;
+        but.onclick = function(){
+            
+            var Youans = inp.value
+            
+        if(Youans > ans){
+            //alert('太大了 小一些');
+           var h1 = document.querySelector('h1');
+           h1.innerHTML = '太大囉 小一點';
+        }else if(Youans < ans){
+            var h1 = document.querySelector('h1');
+            // alert('太小了 大一些')
+            h1.innerHTML = '太小囉 大一些';
+        }else{
+            var h1 = document.querySelector('h1');
+            //alert('答對囉 恭喜你')
+            h1.innerHTML = '答對囉 恭喜你';
+        }
+
+                }
+
+                
+    </script>
+</body>
+</html>

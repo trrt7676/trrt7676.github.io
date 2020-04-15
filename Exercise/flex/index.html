@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Document</title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.top').hide();
+            $('.cont2').css('opacity',.2);
+            var hide = $(window).width();
+
+            if (hide < 697) {
+                $('.menu').hide();
+
+            } else {
+                $('.menu').show();
+                $('.nav-cont ul').show();
+            }
+            $(window).resize(function () {
+                var hide = $(window).width();
+
+                if (hide < 697) {
+                    $('.nav-cont ul').hide();
+
+
+
+                } else {
+
+                    $('.nav-cont ul').show();
+                }
+
+            });
+
+
+
+
+
+
+
+
+
+
+            $(document).scroll(function () {
+                var TOP = $(window).scrollTop();
+                if (TOP > 150) {
+                    $(".top").fadeIn(800);
+                } else {
+                    $(".top").fadeOut(800);
+                }
+
+                
+                
+
+                if (TOP > 1500) {
+                    $('.cont2').css('opacity',1);
+                } else {
+                    $('.cont2').css('opacity',.2);
+                }
+
+            });
+
+
+            $('a .fas').click(function () {
+
+                $('.nav-cont ul').slideToggle();
+
+            });
+
+
+
+
+              
+
+
+              
+            var p = 0,
+
+                t = 0;
+
+            $(window).scroll(function () {
+
+                p = $(this).scrollTop();
+
+                if (t < p) {
+
+                    $('nav.nav').slideUp(900);
+
+                } else {
+
+                    $('nav.nav').slideDown(900);            
+
+                }
+
+                setTimeout(function () { t = p; }, 0)
+
+            })
+
+
+
+
+
+
+
+        });
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-cont">
+            <a class="txt-dr" href="#">
+                <div class="fas fa-bars"></div>
+            </a>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/005.png" alt="">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#specialty">Specialty</a></li>
+                <li><a href="#french stick">French stick</a></li>
+                <li><a href="#bacon">Bacon</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <a href="">
+        <div class="banner"><img src="./img/001.jpg" alt=""></div>
+    </a>
+
+    <div class="content">
+        <div class="cont1"></div>
+        <div class="cont2" id="specialty">
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327799/420de1e7e671ef88.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>香蕉巧克力千層捲</h2>
+                    <p>有做蛋糕的朋友都知道，大多數蛋糕都是多糖、多奶油的。小小一份蛋糕，卡路里可能就相當於一大碗滷肉飯，真的讓喜歡甜食又怕胖的人又愛又恨。想要「沒有罪惡感」地吃甜食，大家可以試試做這一款用新鮮草莓而不用高糖的果乾，而且減糖少奶油的蛋糕。減少奶油後的蛋糕雖然沒那麼香滑，可是比較健康，所以也適合做給小朋友當點心吃。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327696/6b493d8ccb9e8a83.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>草莓布雪</h2>
+                    <p>布雪在法語是一口可以吃掉的小蛋糕。在日本也是必備的下午茶點心之一。很像大家熟悉的台式馬卡龍，內餡填上草莓乳酪，酸甜內餡搭配外酥內鬆軟的蛋糕，吃了還想再吃喔！</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327207/420ae8b068665e8d.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>巧克力蛋糕</h2>
+                    <p>巧克力蛋糕是一款口感極其濕潤的巧克力蛋糕，它的粉量比例很少（甚至沒有）藉由巧克力的本體、雞蛋與油等液態材料結合，嚐出一種滑順、濕綿的層次，是巧克力愛好者不容錯過的甜點，搭配一杯黑咖啡，無懈可擊。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cont3" id="bacon">
+            <div class="pic">
+                <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/156562/b182145b678e6ab0.jpg"
+                    alt="">
+            </div>
+            <div class="txt">
+                <h3>培根酥捲</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="cont4" id="french stick">
+            <img src="./img/002.jpeg" alt="">
+        </div>
+        <div class="cont5" id="menu">
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327745/e43d8a626d3bb0f3.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>法式麵包佐梅果莎莎醬</h2>
+                    <p>酸甜梅果與新鮮蔬果調和的清爽莎莎醬，搭配烤麵包碰撞出酸甜鹹香的清爽滋味，讓人一口接一口。快來試試不油膩又簡易下午茶點吧。</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327424/df41726b70ced3dc.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>火腿香蔥麵包</h2>
+                    <p>小胖鼠的早餐，這次不吃蛋糕了!似乎只有麵包才能滿足食慾。今天就嘗試做火腿香蔥麵包!蔥香四溢加上滿滿火腿，早餐配上牛奶整天元氣滿滿喔^^</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327217/14e51d755a4d78c4.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>奶油胖捲餐包</h2>
+                    <p>把小餐包變成胖餐包，早上吃一個就非常足夠又滿足了。</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/327105/26b2934f5850bd4b.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>義式佛卡夏麵包</h2>
+                    <p>自己做早餐佛卡夏麵包，配上其他食材變成豐富早餐。</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/326867/0e1004f5621ad28a.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>地瓜香軟麵包</h2>
+                    <p>表面刷上蛋液，出爐後表面酥酥，裡面很軟嫩、濕潤！地瓜加上麵粉甜甜的味道，很適合全家大小一同享用唷</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/325782/74751bbe54937ba7.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>焗烤馬鈴薯泥麵包</h2>
+                    <p>將馬鈴薯泥填入小餐包中，擠一點番茄醬(喜歡芥末醬的也擠上吧!)，鋪上乳酪絲或莫札瑞拉起司，180度烤5分鐘以內至起司融化就好了喔!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/326238/324bec3af12068c8.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>原味司康</h2>
+                    <p>英式下午茶最具代表性的甜點之一，外酥內軟的口感，搭配果醬或奶油一起吃超級享受！</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://tokyo-kitchen.icook.network/cdn-cgi/image/width=800,height=600,format=auto,fit=cover,quality=80/uploads/recipe/cover/323389/e074e434c4f724f8.jpg"
+                        alt="">
+                </div>
+                <div class="txt">
+                    <h2>高纖燕麥優格</h2>
+                    <p>因為是無油的配方，口感和傳統司康的酥鬆感略有不同，是比較接近Quick
+                        Bread或鬆糕的質地，調味部分只用蜂蜜和肉桂增添風味，以凸顯全麥粉與燕麥的香氣，因此可再額外搭配任何配料、抹醬，就看你創意囉</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        練習用如有冒犯請見諒參考網站https://icook.tw/
+
+    </div>
+    <a href="#">
+        <div class="top">TOP</div>
+    </a>
+</body>
+
+</html>

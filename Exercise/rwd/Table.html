@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Orbitron','微軟正黑體';
+        }
+
+        .wrap {
+            width: 100%;
+            background: linear-gradient(45deg, rgb(240, 159, 159), rgb(139, 139, 243));
+        }
+
+        .nav {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(64, 123, 233);
+            box-shadow: 0 3px 5px blue;
+        }
+        .nav-con{
+            width:70%;
+            padding: 20px 0;
+            box-sizing: border-box;
+            margin:0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width:60px;
+            height: 60px;
+            background-color: #333;
+            color:white;
+            line-height: 60px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .bar{
+            display: flex;
+        }
+        .nav a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color:brown;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .pic {
+            width:100%;
+            height: calc(100vh - 100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgbox {
+            width: 90%;
+            height: 400px;
+        }
+
+        
+        .imgX {
+            height: 200px;
+            width: 100%;
+            background:url('https://picsum.photos/1300/300?random=3');
+        }
+        .imgZ {
+            height: 200px;
+            width: 50%;
+            background:url('https://picsum.photos/900/300?random=9');
+            float: left;
+        }
+
+        .imgY {
+            height:200px;
+            float: left;
+            background: url('https://picsum.photos/900/300?random=5');
+            width: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <div class="nav-con">
+                    <a href="Pc.html">
+                        <div class="logo">LOGO</div>
+                    </a>   
+                <div class="bar">
+                    <a href="Pc.html">
+                        <h2>Pc</h2>
+                    </a>
+                    <a href="Small-pc.html">
+                        <h2>Small-pc</h2>
+                    </a>
+                    <a href="Table.html">
+                        <h2>Table</h2>
+                    </a>
+                    <a href="Phone.html">
+                        <h2>Phone</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+            <div class="imgbox">
+                <div class="imgX"></div>
+                <div class="imgY"></div>
+                <div class="imgZ"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

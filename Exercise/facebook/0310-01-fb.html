@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/font.js"></script>
+    
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: '微軟正黑體';
+            text-decoration: none;
+         
+        }
+        body{
+            background-color: #e9ebee;
+        }
+        .box{
+            width:1000px;
+            height: 400px;
+            background-color: rgb(105, 121, 212);
+            margin:0 auto;
+            position: relative;
+            box-sizing: border-box;
+           
+        }
+     
+        .box1{
+            width:1000px;
+            height: 50px;
+            background-color: #3a5b9b;
+           
+            
+            
+            
+        }
+        .box1 ul{
+            float: right;
+           
+            display: flex;
+            margin:15px;
+        }
+        .box ul li {
+            
+           
+            border-right: 1px solid #999;
+        }
+        .box ul li a{
+           color:#fff;
+           font-weight: 800;
+           display:block;
+           padding: 0 15px;
+
+        }
+       
+        .box input{
+            width:400px;
+            height: 34px;
+            border-radius: 7px 0 0 7px;
+            margin:8px 0 8px 10px;
+            border: 0;
+            float: left;
+           
+        }
+        .box2{
+            width:1000px;
+            height: 300px;
+            background-image: url('img/005.png');
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            transition: all 0.25s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .box2::before {
+            content: "";
+            background-color: rgba(255,255,255,0.5);
+            height: 100%;
+            width: 25%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            transform: skewX(-45deg) translateX(-1000px);
+           
+            z-index: 2;
+        }
+        .box2::after {
+            content: "";
+            background-color: rgba(255,255,255,0.5);
+            height: 100%;
+            width: 25%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            transform: skewX(-45deg) translateX(-1000px);
+            
+            z-index: 2;
+        }
+        .box2:hover::before {
+            transform: skewX(-45deg) translateX(1600%);
+            transition: all .5s ;
+        }
+        .box2:hover::after {
+            transform: skewX(-45deg) translateX(1400%);
+            transition: all .5s ease-in-out;
+        }
+
+        .box2 ul{
+            display: flex;
+        }
+        .box2 ul li{
+            padding: 5px 10px;
+            background-color: rgb(250, 250, 250);
+            margin:0 10px 10px 0;
+            font-size: 14px;
+            font-weight: 600;
+            border:1px solid #000;
+            
+        }
+
+        .p{
+            width:160px;
+            height: 160px;
+            border-radius: 160px;
+            border:5px solid rgb(228, 227, 227);
+            position: absolute;
+            z-index: 3;
+            top: 220px;
+            left: 20px;
+            background-image:url('img/004.png');   
+        }
+        .box3{
+            width:1000px;
+            height: 50px;
+            background-color:#fff;
+            position: relative;
+            display: flex;
+           
+           
+        }
+        .box3 ul{
+            display: flex;
+            margin-left: 220px;
+            border-left: 1px solid #999;
+        }
+        .box3 ul li{
+            padding: 10px 20px;
+            border-right: 1px solid #999;
+            line-height: 35px;
+            font-weight: 600;
+            
+        }
+        .box2 ul li a{
+            color:black;
+        }
+        .box3 ul li a{
+            color:#3858b3;
+        }
+        .box4{
+            width:100px;
+            height: 50px;
+            background-color: rgb(241, 60, 4);
+            color:#fff;
+            position: absolute;
+            right: 70px;
+           
+            line-height: 50px;
+            text-align: center;
+            display: none;
+           
+        }
+
+        .wrap  {
+            display: flex;
+            width: 1000px;
+            height: 800px;
+            background:linear-gradient(45deg,rgb(253, 191, 191),rgb(230, 93, 93));
+            justify-content: center;
+            align-items: center;
+            margin:0 auto;
+        }
+        .cont{
+            width: 700px;
+            height: 600px;
+            border:1px solid rgb(33, 145, 14) ;
+            border-radius: 20px;
+            
+            display: flex;
+        }
+        .pic{
+            width: 35%;
+            border-radius: 20px 0 0 20px;
+            background: url("img/002.jpg")center center;
+            overflow: hidden;
+        }
+        
+        .txt{
+            background-color: #000;
+            width: 60%;
+            padding: 30px;
+            color:#fff;
+            border-radius: 0 20px 20px 0;
+        }
+        .txt h1{
+            padding: 20px 0;
+            border-bottom:1px solid #888;
+        }
+        h1 span{
+            font-size: 15px;
+            color:#999;
+            margin-left: 20px;
+        }
+        .txt h2 {
+            color:coral;
+            position: relative;
+        }
+        .txt h2::after{
+            content:'';
+            position: absolute;
+            
+            width:0%;
+            height: 3px;
+            bottom:-7px;
+            left: 0;
+            background-color: rgb(73, 199, 238);
+            transition: all 0.8s;
+
+        }
+        .txt h2:hover::after{
+            width: 15%;
+
+        }
+        .txt p{
+            padding: 5px;
+            margin: 10px 0;
+        }
+        .txt ul {
+            display: flex;
+            margin:30px 0 0 30px;
+
+        }
+        .txt li {
+            background-color: darkgoldenrod;
+            border-radius: 5px;
+            
+            margin-right:15px;
+            padding: 3px;
+            transition:all 0.8s;
+        }
+        .txt li:hover{
+            color:darksalmon;
+            background-color: black;
+            transform: translateY(-5px);
+        }
+        .nav{
+            width:100%;
+            height: 50px;
+            background-color:#3a5b9b;
+            margin-bottom:-50px;
+
+        }
+        .newpic{
+            position: absolute;
+            top:20px;
+            left:25px;
+            background-color: black;
+            color:#fff;
+            border:1px solid #fff;
+            font-weight: 600;
+            padding: 5px 15px;
+            font-size: 10px;
+            line-height: 25px;
+            height: 25px;
+        }
+        .newpic a{
+            color:#fff;
+        }
+        .name{
+            position: absolute;
+            top:245px;
+            left:230px;
+            font-weight: 400;
+            font-size: 30px;
+         }
+         .name a{
+             color:#fff;
+         }
+         
+         .picf{
+             width: 50px;
+             height: 50px;
+             float: left;
+         }
+         .picf img{
+             width:100%;
+         }
+         .fab{
+             color:#3a5b9b;
+             margin:0 30px;
+         }
+         .fas{
+            font-size: 22px;
+            color:rgb(129, 129, 129);
+        }
+        button{
+            width: 64px;
+            height: 34px;
+            float: left;
+            margin-top: 8px;
+            border-radius: 0 7px 7px 0;
+            border: 0;
+            text-align: center;
+        
+        }
+    </style>
+</head>
+<body><a href=""></a>
+    <div class="nav"></div>
+    <div class="box">
+        
+        <div class="box1">
+            <div class="picf">
+                <img src="img/fb.png" alt="">
+            </div>
+            <input type="text"placeholder="      搜尋人、地點、事物      "><button  class="fas fa-search"></button>
+            <ul>
+                <li><a href="#">王大明</a></li>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">建立</a></li>
+            </ul>
+        </div>
+      
+        <div class="box2">
+            <div class="newpic"><a href="#">更新封面照片</a></div>
+            <div class="name"><a href="#">王大明</a></div>
+            <ul>
+                <li><a href="#">更新資料</a></li>
+                <li><a href="#">查看活動資料</a></li>
+            </ul>
+        </div>
+        <div class="p"></div>
+        <div class="box3">
+            <ul>
+                <li><a href="#">動態時報</a></li>
+                <li><a href="#">關於</a></li>
+                <li><a href="#">朋友</a></li>
+                <li><a href="#">相片</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+            <div class="box4">訂閱</div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="cont">
+            <div class="pic">
+                
+            </div>
+            <div class="txt">
+                <h1>巧克力<span>巧克力<i class="fab fa-facebook-square"></i></span></h1>
+                <p>巧克力含有豐富的鐵、鈣、鎂、鉀、維生素A、維生素C 和可可鹼，由於多添加糖分，因此具有高能量值。由天然成分製作的巧克力對人類之外的許多動物有毒(例如: 狗隻)，但對人類無毒、且其中微量的可可鹼是健康的反鎮靜成分。故食用巧克力有提升精神，增強興奮等功效。可可含有苯乙胺，坊間流傳能使人有戀愛感覺的流言[1]。</p>
+                <h2>製作</h2>
+                <p>可可豆經過發酵、乾燥、烘焙、研磨，製成可可汁。可可汁可製成可可脂與可可粉，或選高品質的粗製可可汁經進一步加工製成巧克力。可可液塊（Cocoa liquor）是可可塊與可可脂液體混合物凝固後的物質，兩種成分的比例大致相等。</p>
+                <h2>種類</h2>
+                <ul>
+                    <li>無味巧克力</li>
+                    <li>黑巧克力</li>
+                    <li>牛奶巧克力</li>
+                    <li>白巧克力</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

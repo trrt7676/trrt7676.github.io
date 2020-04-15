@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: '微軟正黑體';
+        }
+nav{
+    width:300px;
+    height: 100vh;
+    background-color: rgb(181, 190, 233);
+    display: flex;
+    justify-content: center;
+    float: left;
+   
+    
+}
+ul li a{
+    display: block;
+    color:brown;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-top: 40px;
+}
+ul li:nth-child(3){
+    position: relative;
+    z-index: 2;
+   
+    
+}
+ul li:nth-child(3) a{
+    position: relative;
+    border: 0;
+    
+}
+ul li:nth-child(3)::after{
+    content:'';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: block;
+    z-index: 0;
+    width:100px;
+    height: 100px;
+    border: 10px solid rgb(0, 0, 0);
+    transform:rotate(10deg);
+    z-index: -1;
+}
+ul li:nth-child(3)::before{
+    content:'';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: block;
+    z-index: 0;
+    width:100px;
+    height: 100px;
+    border: 10px solid rgb(255, 255, 255);
+    transform:rotate(20deg);
+}
+ul li:nth-child(5) a{
+
+    box-shadow: 5px 5px 50px 50px brown;
+}
+ul li:nth-child(4) a{
+
+box-shadow:70px 0px 0px 20px rgb(255, 255, 255),
+           90px 0px 0px 50px rgb(245, 134, 134)
+}
+.box{
+    width:100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    float: left;
+    
+
+    animation: XXX 5s infinite ;
+}
+@keyframes XXX {
+    0%{
+        transform: translate(0,0)rotate(0deg);
+        border-radius: 0%;
+    }
+    25%{
+        transform: translate(500px,0)rotate(-45deg);
+        background-color:#ff0;
+        border-radius:25%;
+        }
+    50%{
+        transform: translate(500px,500px)rotate(-90deg);
+        background-color:#0f0;
+        border-radius: 50%;
+        }
+    75%{
+        transform: translate(0,500px);
+        background-color:rgb(74, 103, 231)rotate(180deg);
+        border-radius: 25%;
+        }
+    100%{
+        transform: translate(0,0)rotate(-180deg);
+        border-radius: 0%;
+        }
+    
+    }       
+   
+    *{
+            padding: 0;
+            margin: 0;
+        }
+        .op{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100vh;
+            overflow: hidden;
+            animation:ZZ 2s 3s;
+            animation-fill-mode: forwards;
+
+        }
+       
+        .box{
+            width:100%;
+            height: 1vh;
+            background-color: #000;
+            animation: XX 3s;
+        }
+        .op div:nth-child(2n){
+            animation: YY 3s;
+        }
+        @keyframes XX{
+            0%{
+            transform: translateX(-100%);
+            }
+            100%{
+            transform: translateX(0%);
+            }
+        }
+        @keyframes YY{
+            0%{
+            transform: translateX(100%);
+            }
+            100%{
+            transform: translateX(0%);
+            }
+        }
+
+        @keyframes ZZ{
+            0%{
+            opacity: 1;
+            }
+            100%{
+            opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="op">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">AAA</a></li>
+            <li><a href="#">BBB</a></li>
+            <li><a href="#">CCC</a></li>
+            <li><a href="#">DDD</a></li>
+            <li><a href="#">FFF</a></li>
+        </ul>
+    </nav>
+<div class="box">555</div>
+</body>
+</html>

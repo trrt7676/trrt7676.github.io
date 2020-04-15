@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/001.jpg" alt="">
+
+
+
+    <script>
+        var img = document.querySelector('img');
+        // var src = img.getAttribute('src');
+
+        img.onclick = function(){
+            var src = img.getAttribute('src');
+
+            var f_pic ="img/001.jpg"
+            var s_pic ="img/004.jpg"
+            var t_pic ="img/002.jpeg"
+
+
+            if(src == f_pic){
+                img.setAttribute('src',s_pic)
+            }else if(src == s_pic){
+                img.setAttribute('src',t_pic)
+            }else{
+                img.setAttribute('src',f_pic)
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
