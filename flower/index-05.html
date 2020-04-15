@@ -164,7 +164,7 @@
         .buy .buylist a{
             text-align: center;
             display: block;
-            color:#fff;
+            color:#806C86;
             font-size: 26px;
             text-decoration:none;
             line-height: 90px;
@@ -196,7 +196,17 @@
         .buy h2{
             color:#fff;
         }
-
+        .buytxt{
+            display: none;
+        } 
+        .buytxt p{
+            color:#fff;
+            margin: 40px;
+            border: 2px solid #fff;
+            padding: 60px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
         section.promotions {
             width: 100%;
         }
@@ -404,6 +414,12 @@
         .A3 {
             opacity: 0;
         }
+        .show{
+            display: block;
+        }
+        .color p{
+            color:#fff;
+        }
 
         @media screen and (max-width: 767px) {
 
@@ -542,16 +558,16 @@
         <div class="buy container">
             <div class="row">
                 <div class="col-12  col-lg-2"><h2>Buy</h2></div>
-                <div class="col-12  buylist col-lg-2"><a href="#"><p>挑選</p></a></div>
-                <div class="col-12  buylist col-lg-2"><a href="#"><p>開單</p></a></div>
-                <div class="col-12  buylist col-lg-2"><a href="#"><p>批價</p></a></div>
-                <div class="col-12  buylist col-lg-2"><a href="#"><p>結帳</p></a></div>
-                <div class="col-12  buylist col-lg-2"><a href="#"><p>取貨</p></a></div>
-                <div class="col-12 txt"><p>依照個人需求及喜好自行挑選。</p></div>
-                <div class="col-12 txt"><p>由工作人員陪同核對您所挑選的花材之品名、數量並開立清單。如有其他需求可於此時一併告知。(如:裝箱、紙包、寄冰、配送(含地點)等)。</p></div>
-                <div class="col-12 txt"><p>將上述清單交由老闆或店長批價。價格將依購買數量及身分不同(一般顧客9折、花店8折、插花老師8折、批發商7折)有所差異，可提供名片證明。</p></div>
-                <div class="col-12 txt"><p>至櫃台結帳，由櫃台人員計算總金額並收款。花店、老師、批發商有提供月結的服務。</p></div>
-                <div class="col-12 txt"><p>自行取貨，或是配送指定地點。</p></div>
+                <div class="col-12  buylist col-lg-2 color"><a href="javascript:;"><p>挑選</p></a></div>
+                <div class="col-12  buylist col-lg-2"><a href="javascript:;"><p>開單</p></a></div>
+                <div class="col-12  buylist col-lg-2"><a href="javascript:;"><p>批價</p></a></div>
+                <div class="col-12  buylist col-lg-2"><a href="javascript:;"><p>結帳</p></a></div>
+                <div class="col-12  buylist col-lg-2"><a href="javascript:;"><p>取貨</p></a></div>
+                <div class="col-12 buytxt show"><p>依照個人需求及喜好自行挑選。</p></div>
+                <div class="col-12 buytxt"><p>由工作人員陪同核對您所挑選的花材之品名、數量並開立清單。如有其他需求可於此時一併告知。(如:裝箱、紙包、寄冰、配送(含地點)等)。</p></div>
+                <div class="col-12 buytxt"><p>將上述清單交由老闆或店長批價。價格將依購買數量及身分不同(一般顧客9折、花店8折、插花老師8折、批發商7折)有所差異，可提供名片證明。</p></div>
+                <div class="col-12 buytxt"><p>至櫃台結帳，由櫃台人員計算總金額並收款。花店、老師、批發商有提供月結的服務。</p></div>
+                <div class="col-12 buytxt"><p>自行取貨，或是配送指定地點。</p></div>
             </div>
         </div>
 
@@ -739,6 +755,28 @@
 
             });
         });
+
+        var buylist = document.querySelectorAll('.buylist');
+        var txt = document.querySelectorAll('.buytxt');
+        for (let index = 0; index < buylist.length; index++) {
+            const buyclick = buylist[index];
+            const txtshow = txt[index];
+            buyclick.onclick = function(){
+                rem();
+                buyclick.classList.add('color');
+                txtshow.classList.add('show');
+            }
+            
+        }
+            function rem() {
+            for (let index = 0; index < buylist.length; index++) {
+                const buyclick = buylist[index];
+                const txtshow = txt[index];
+                buyclick.classList.remove('color');
+                txtshow.classList.remove('show');
+        }
+        }
+
     </script>
 </body>
 
