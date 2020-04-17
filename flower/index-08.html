@@ -768,6 +768,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
 
     <script>
+        
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
 
@@ -792,7 +793,7 @@
 
 
         $(document).ready(function () {
-
+            
             var p = 0,
 
                 t = 0;
@@ -803,14 +804,16 @@
 
                 if (t < p) {
 
-                    $('nav').slideUp(900);
+                    $('nav').slideUp(400);
+                    
                      setTimeout(function () { t = p; }, 0)
                 } else {
 
-                    $('nav').slideDown(900);
+                    $('nav').slideDown(400);
+                    
                      setTimeout(function () { t = p; }, 0)
                 }
-
+                event.preventDefault();
                 setTimeout(function () { t = p; }, 0)
 
             })
