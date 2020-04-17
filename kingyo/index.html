@@ -16,36 +16,88 @@
             font-family: '微軟正黑體';
         }
 
+        nav {
+            width: 100%;
+            position: absolute;
+            z-index: 99;
+        }
+        
+        
+
+        .row .three {
+            padding: 70px 50px 70px 0;
+            margin-left: auto;
+            color: #ecf0f1;
+            text-align: center;
+        }
+
+        .hamburger .line {
+            width: 50px;
+            height: 5px;
+            background-color: #ecf0f1;
+            display: block;
+            margin: 8px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hamburger:hover {
+            cursor: pointer;
+        }
+
+        #hamburger-3.is-active .line:nth-child(1),
+        #hamburger-3.is-active .line:nth-child(3) {
+            width: 40px;
+        }
+
+        #hamburger-3.is-active .line:nth-child(1) {
+            -webkit-transform: translateX(-10px) rotate(-45deg);
+            -ms-transform: translateX(-10px) rotate(-45deg);
+            -o-transform: translateX(-10px) rotate(-45deg);
+            transform: translateX(-10px) rotate(-45deg);
+        }
+
+        #hamburger-3.is-active .line:nth-child(3) {
+            -webkit-transform: translateX(-10px) rotate(45deg);
+            -ms-transform: translateX(-10px) rotate(45deg);
+            -o-transform: translateX(-10px) rotate(45deg);
+            transform: translateX(-10px) rotate(45deg);
+        }
+
         .section {
             text-align: center;
             font-size: 3em;
         }
-        .section .lemon1,.section .lemon2 {
+
+        .section .lemon1,
+        .section .lemon2 {
             display: inline;
 
         }
 
         .section .lemon1 svg {
             width: 150px;
-            
+
             transform: rotate(45deg);
             transition: .8s;
         }
 
         .section .lemon1:hover svg {
-            
+
             transform: translateY(300px) rotate(225deg);
 
         }
+
         .section .lemon2 svg {
             width: 150px;
-            
+
             transform: rotate(15deg)translateX(-250px);
             transition: .8s;
         }
 
         .section .lemon2:hover svg {
-            
+
             transform: translateX(-200px) translateY(200px) rotate(215deg);
 
         }
@@ -74,9 +126,21 @@
     <nav>
         <div class="container-fluid">
             <div class="row">
+                
                 <div class="logo">
                     <img src="img/logo.jpg" alt="">
                 </div>
+                
+                
+
+                <div class="bar three">
+                    <div class="hamburger" id="hamburger-3">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -180,7 +244,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
 
     <script>
-
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+            });
+        });
 
         new fullpage('#fullpage', {
             sectionsColor: ['#bcd3c1', '#A9BB95', '#fdda88', '#ADD8E6'],
