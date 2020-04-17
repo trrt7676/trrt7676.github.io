@@ -1,23 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
     <title>Document</title>
-    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: '微軟正黑體';
+        }
+
+        .section {
+            text-align: center;
+            font-size: 3em;
+        }
+        .section .lemon1,.section .lemon2 {
+            display: inline;
+
+        }
+
+        .section .lemon1 svg {
+            width: 150px;
+            
+            transform: rotate(45deg);
+            transition: .8s;
+        }
+
+        .section .lemon1:hover svg {
+            
+            transform: translateY(300px) rotate(225deg);
+
+        }
+        .section .lemon2 svg {
+            width: 150px;
+            
+            transform: rotate(15deg)translateX(-250px);
+            transition: .8s;
+        }
+
+        .section .lemon2:hover svg {
+            
+            transform: translateX(-200px) translateY(200px) rotate(215deg);
+
+        }
+
+        .section .about .txt {
+            width: 60%;
+            background-color: rgb(255, 255, 255, .15);
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .section .about h2 {
+            margin-bottom: 40px;
+        }
+
+        .section .about p {
+            font-size: 16px;
+            margin: 10px 30px;
+
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+    <div id="fullpage">
+        <div class="section">
+            <div class="lemon1">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                    style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                    <path style="fill:#AA6100;"
+                        d="M306.267,79.236c-4.212,0-7.625-3.414-7.625-7.625v-41.13c-12.106,12.723-32.436,27.903-63.29,33.112
+	c-4.156,0.7-8.088-2.097-8.789-6.25c-0.7-4.152,2.097-8.087,6.249-8.788c47.5-8.02,65.897-42.917,66.657-44.399
+	c1.608-3.134,5.161-4.77,8.581-3.944c3.423,0.827,5.841,3.879,5.841,7.4v63.998C313.892,75.822,310.479,79.236,306.267,79.236z" />
+                    <path style="fill:#6DC82A;" d="M254.212,54.797c-1.596,3.996-3.335,7.93-5.236,11.794c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c-13.705,0.915-27.41,0.366-40.566-1.698c-2.237-0.346-3.172-3.081-1.606-4.728
+	c3.264-3.426,6.283-7.086,9.038-10.94c17.334-24.299,26.169-56.66,48.862-77.98c16.562-15.565,37.719-24.766,60.076-28.06
+	c17.924-2.643,36.346-1.688,54.118,1.657l22.591,7.371C253.999,51.584,254.812,53.292,254.212,54.797z" />
+                    <path style="fill:#7ED63E;" d="M248.976,66.59c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c14.447-23.231,23.628-51.627,44.195-70.944c16.562-15.565,37.719-24.766,60.076-28.06
+	C219.015,64.272,234.153,64.547,248.976,66.59z" />
+                    <path style="fill:#EEBF00;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-5.653,2.735-12.038,4.27-18.809,4.27c-16.745,0-31.202-9.425-37.892-23.028
+	c-5.388-10.96-13.522-20.374-24.075-26.505c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047
+	c10.441-6.019,18.514-15.301,23.892-26.098c6.72-13.512,21.117-22.845,37.79-22.845c6.761,0,13.156,1.535,18.809,4.26
+	c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+                    <path style="fill:#FFD422;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-8.347-4.026-15.098-10.645-19.083-18.758c-5.388-10.96-13.522-20.374-24.075-26.505
+	c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047c10.441-6.019,18.514-15.301,23.892-26.098
+	c3.996-8.032,10.695-14.579,18.982-18.585c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+
+                </svg>
+            </div>
+            <div class="lemon2">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                    style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                    <path style="fill:#AA6100;"
+                        d="M306.267,79.236c-4.212,0-7.625-3.414-7.625-7.625v-41.13c-12.106,12.723-32.436,27.903-63.29,33.112
+	c-4.156,0.7-8.088-2.097-8.789-6.25c-0.7-4.152,2.097-8.087,6.249-8.788c47.5-8.02,65.897-42.917,66.657-44.399
+	c1.608-3.134,5.161-4.77,8.581-3.944c3.423,0.827,5.841,3.879,5.841,7.4v63.998C313.892,75.822,310.479,79.236,306.267,79.236z" />
+                    <path style="fill:#6DC82A;" d="M254.212,54.797c-1.596,3.996-3.335,7.93-5.236,11.794c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c-13.705,0.915-27.41,0.366-40.566-1.698c-2.237-0.346-3.172-3.081-1.606-4.728
+	c3.264-3.426,6.283-7.086,9.038-10.94c17.334-24.299,26.169-56.66,48.862-77.98c16.562-15.565,37.719-24.766,60.076-28.06
+	c17.924-2.643,36.346-1.688,54.118,1.657l22.591,7.371C253.999,51.584,254.812,53.292,254.212,54.797z" />
+                    <path style="fill:#7ED63E;" d="M248.976,66.59c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c14.447-23.231,23.628-51.627,44.195-70.944c16.562-15.565,37.719-24.766,60.076-28.06
+	C219.015,64.272,234.153,64.547,248.976,66.59z" />
+                    <path style="fill:#EEBF00;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-5.653,2.735-12.038,4.27-18.809,4.27c-16.745,0-31.202-9.425-37.892-23.028
+	c-5.388-10.96-13.522-20.374-24.075-26.505c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047
+	c10.441-6.019,18.514-15.301,23.892-26.098c6.72-13.512,21.117-22.845,37.79-22.845c6.761,0,13.156,1.535,18.809,4.26
+	c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+                    <path style="fill:#FFD422;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-8.347-4.026-15.098-10.645-19.083-18.758c-5.388-10.96-13.522-20.374-24.075-26.505
+	c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047c10.441-6.019,18.514-15.301,23.892-26.098
+	c3.996-8.032,10.695-14.579,18.982-18.585c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+
+                </svg>
+            </div>
+        </div>
+        <div class="section">
+            <div class="about container">
+                <div class="txt">
+                    <h2>關於我們</h2>
+                    <p>給您一杯感動的好茶!</p>
+                    <p>以獨家黃金比例的-翡翠檸檬打響名號。</p>
+                    <p>看準台灣人手一杯飲料及未來全世界茶飲流行的潛在商機，將台灣最好的鮮果與季節農產、熬煮蔗糖入茶，讓客人以平價就喝得到高品質的好茶；創造出清玉茶飲有別於其他飲料品牌的獨特優勢清玉品牌堅持以天然、新鮮的原料製作茶飲，每一杯飲料，都是秉持著「給客人一杯感動的好茶」的想法調製；要把最好的那一杯飲料交付到顧客手裡，讓每一位顧客，喝到的每一口茶都能感受到清玉的用心。在現代人重視健康飲品的觀念下，帶動台灣一波翡翠檸檬與鮮果茶飲的風潮。
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" data-anchor="slide1">口感茶</div>
+            <div class="slide" data-anchor="slide2">鮮味茶</div>
+            <div class="slide" data-anchor="slide2">原味茶</div>
+        </div>
+        <div class="section">Section 3</div>
+        <div class="section">Section 4</div>
+    </div>
 
 
 
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+
+    <script>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/jquery-3.4.1.min.js"></script>
+        new fullpage('#fullpage', {
+            sectionsColor: ['#bcd3c1', '#A9BB95', '#fdda88', '#ADD8E6'],
+        });
+    </script>
 </body>
+
 </html>

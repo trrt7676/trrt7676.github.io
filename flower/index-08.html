@@ -804,17 +804,17 @@
 
                 if (t < p) {
 
-                    $('nav').slideUp(400);
+                    $('nav').slideUp(400)
                     
-                     setTimeout(function () { t = p; }, 0)
+                     
                 } else {
 
-                    $('nav').slideDown(400);
+                    $('nav').slideDown(400)
                     
-                     setTimeout(function () { t = p; }, 0)
+                     
                 }
                 event.preventDefault();
-                setTimeout(function () { t = p; }, 0)
+                setTimeout(function () { t = p; }, 0).stop();
 
             })
 
