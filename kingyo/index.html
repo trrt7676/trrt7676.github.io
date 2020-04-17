@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/title.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
-    <title>Document</title>
+    <title>KingYo</title>
     <style>
         * {
             padding: 0;
@@ -15,20 +16,52 @@
             box-sizing: border-box;
             font-family: '微軟正黑體';
         }
+        
 
         nav {
             width: 100%;
             position: absolute;
             z-index: 99;
         }
-        .banner.footer{
+        .banner,.footer,.porduct,.about{
             position: relative;
         }
-        
+       
+        .porductfloat{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .porductfloat p{
+            font-size: 16px;
+        }
+        .modal-content{
+            text-align: left;
+            background-color: rgb(246, 190, 190);
+            border: 20px solid rgb(246, 100, 100);
+            border-radius: 10px;
+
+        }
+        .modal-header ,.modal-footer {
+            border:0;
+        }
+        button.close:focus {
+            outline:none ;
+        }
+
+        .modal-content p{
+            padding-bottom: 5px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .modal-backdrop {
+            display: none;
+           
+        }
         
 
         .row .three {
-            padding: 70px 50px 70px 0;
+            padding: 25px 50px 25px 0;
             margin-left: auto;
             color: #ecf0f1;
             text-align: center;
@@ -75,8 +108,12 @@
 
         .section .lemon1,
         .section .lemon2,
-        .section .lemon3 {
+        .section .lemon3,
+        .lemon5,
+        .lemon6,
+        .lemon7  {
             display: inline;
+            
 
         }
 
@@ -112,8 +149,27 @@
             transform: translateX(-50%);
             bottom: 5%; 
             animation: up 1.5s infinite;
+            
         
             
+        }
+        
+        .lemon5 svg {
+            width:150px;
+            transform: translateX(200px)translateY(-190px)rotate(60deg);
+       
+        }
+        .lemon6 svg {
+            width:150px;
+            
+            transform: translateX(0)translateY(-90px)rotate(80deg);
+       
+        }
+        .lemon7 svg {
+            width:150px;
+            
+            transform: translateX(-550px)translateY(-200px)rotate(10deg);
+       
         }
         
         .store{
@@ -188,6 +244,7 @@
         .section .about p {
             font-size: 16px;
             margin: 10px 30px;
+            
            
 
         }
@@ -201,7 +258,7 @@
             <div class="row">
                 
                 <div class="logo">
-                    <img src="img/logo.jpg" alt="">
+                    <a href="javasctipt:;"><img height='100' src="img/logo.jpg" alt=""></a>
                 </div>
                 
                 
@@ -308,9 +365,70 @@
 
                 </svg>
             </a>
+            
         </div>
         <div class="section">
+            
+            <div class="lemon5">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                    style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                    <path style="fill:#AA6100;"
+                        d="M306.267,79.236c-4.212,0-7.625-3.414-7.625-7.625v-41.13c-12.106,12.723-32.436,27.903-63.29,33.112
+	c-4.156,0.7-8.088-2.097-8.789-6.25c-0.7-4.152,2.097-8.087,6.249-8.788c47.5-8.02,65.897-42.917,66.657-44.399
+	c1.608-3.134,5.161-4.77,8.581-3.944c3.423,0.827,5.841,3.879,5.841,7.4v63.998C313.892,75.822,310.479,79.236,306.267,79.236z" />
+                    <path style="fill:#6DC82A;" d="M254.212,54.797c-1.596,3.996-3.335,7.93-5.236,11.794c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c-13.705,0.915-27.41,0.366-40.566-1.698c-2.237-0.346-3.172-3.081-1.606-4.728
+	c3.264-3.426,6.283-7.086,9.038-10.94c17.334-24.299,26.169-56.66,48.862-77.98c16.562-15.565,37.719-24.766,60.076-28.06
+	c17.924-2.643,36.346-1.688,54.118,1.657l22.591,7.371C253.999,51.584,254.812,53.292,254.212,54.797z" />
+                    <path style="fill:#7ED63E;" d="M248.976,66.59c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c14.447-23.231,23.628-51.627,44.195-70.944c16.562-15.565,37.719-24.766,60.076-28.06
+	C219.015,64.272,234.153,64.547,248.976,66.59z" />
+                    <path style="fill:#EEBF00;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-5.653,2.735-12.038,4.27-18.809,4.27c-16.745,0-31.202-9.425-37.892-23.028
+	c-5.388-10.96-13.522-20.374-24.075-26.505c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047
+	c10.441-6.019,18.514-15.301,23.892-26.098c6.72-13.512,21.117-22.845,37.79-22.845c6.761,0,13.156,1.535,18.809,4.26
+	c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+                    <path style="fill:#FFD422;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-8.347-4.026-15.098-10.645-19.083-18.758c-5.388-10.96-13.522-20.374-24.075-26.505
+	c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047c10.441-6.019,18.514-15.301,23.892-26.098
+	c3.996-8.032,10.695-14.579,18.982-18.585c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+
+                </svg>
+            </div>
+            <div class="lemon7">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                    style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                    <path style="fill:#AA6100;"
+                        d="M306.267,79.236c-4.212,0-7.625-3.414-7.625-7.625v-41.13c-12.106,12.723-32.436,27.903-63.29,33.112
+	c-4.156,0.7-8.088-2.097-8.789-6.25c-0.7-4.152,2.097-8.087,6.249-8.788c47.5-8.02,65.897-42.917,66.657-44.399
+	c1.608-3.134,5.161-4.77,8.581-3.944c3.423,0.827,5.841,3.879,5.841,7.4v63.998C313.892,75.822,310.479,79.236,306.267,79.236z" />
+                    <path style="fill:#6DC82A;" d="M254.212,54.797c-1.596,3.996-3.335,7.93-5.236,11.794c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c-13.705,0.915-27.41,0.366-40.566-1.698c-2.237-0.346-3.172-3.081-1.606-4.728
+	c3.264-3.426,6.283-7.086,9.038-10.94c17.334-24.299,26.169-56.66,48.862-77.98c16.562-15.565,37.719-24.766,60.076-28.06
+	c17.924-2.643,36.346-1.688,54.118,1.657l22.591,7.371C253.999,51.584,254.812,53.292,254.212,54.797z" />
+                    <path style="fill:#7ED63E;" d="M248.976,66.59c-15.677,32.148-41.267,59.435-72.49,76.902
+	c-22.713,12.709-49.614,20.171-76.546,21.971c14.447-23.231,23.628-51.627,44.195-70.944c16.562-15.565,37.719-24.766,60.076-28.06
+	C219.015,64.272,234.153,64.547,248.976,66.59z" />
+                    <path style="fill:#EEBF00;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-5.653,2.735-12.038,4.27-18.809,4.27c-16.745,0-31.202-9.425-37.892-23.028
+	c-5.388-10.96-13.522-20.374-24.075-26.505c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047
+	c10.441-6.019,18.514-15.301,23.892-26.098c6.72-13.512,21.117-22.845,37.79-22.845c6.761,0,13.156,1.535,18.809,4.26
+	c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+                    <path style="fill:#FFD422;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+	c-3.985,8.113-10.736,14.732-19.083,18.758c-8.347-4.026-15.098-10.645-19.083-18.758c-5.388-10.96-13.522-20.374-24.075-26.505
+	c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047c10.441-6.019,18.514-15.301,23.892-26.098
+	c3.996-8.032,10.695-14.579,18.982-18.585c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+	C419.312,150.172,455.007,215.616,455.007,291.603z" />
+
+                </svg>
+            </div>
             <div class="about container">
+                
                 <div class="txt">
                     <h2>關於我們</h2>
 
@@ -331,22 +449,104 @@
             </div>
         </div>
         <div class="section">
+            
             <div class="slide" data-anchor="slide1">
-                <div class="container">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        口感茶
-                    </button>
-                      
-                    <div class="modal" id="exampleModalCenter">
-                        珍珠紅/綠茶Pearl Red / Green Tea
-                        珍珠奶綠/奶茶Pearl milk green / milk tea
-                        鐵觀音珍奶Tieguanyin precious milk
-                        布丁奶茶Pudding milk tea
-                        檸檬愛玉Lemon Love Jade
-                        檸檬三姊妹Lemon Three Sisters
-                        翡翠檸檬愛玉Emerald Lemon Love Jade
-                        仙草凍奶茶Jelly grass milk tea
+                <div class="container product">
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="" data-toggle="modal" data-target="#taste">
+                                <img height="330" src="img/taste.png"  alt="">
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" data-toggle="modal" data-target="#fresh">
+                                <img height="330" src="img/fresh.png"  alt="">
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" data-toggle="modal" data-target="#plain">
+                                <img height="330" src="img/plain.png"  alt="">
+                            </a>
+                        </div>
                     </div>
+                        <div class="porductfloat modal fade" id="taste" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">口感茶Taste</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                    <p>珍珠紅/綠茶 <br> Pearl Red / Green Tea</p>
+                                    <p>珍珠奶綠/奶茶 <br> Pearl milk green / milk tea</p>
+                                    <p>鐵觀音珍奶 <br> Tieguanyin precious milk</p>
+                                    <p>布丁奶茶 <br> Pudding milk tea</p>
+                                    <p>檸檬愛玉 <br> Lemon Love Jade</p>
+                                    <p>檸檬三姊妹 <br> Lemon Three Sisters</p>
+                                    <p>翡翠檸檬愛玉 <br> Emerald Lemon Love Jade</p>
+                                    <p>仙草凍奶茶 <br> Jelly grass milk tea</p>
+                                </div>
+                                <div class="modal-footer">
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="porductfloat modal fade" id="fresh" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">鮮味茶 Fresh</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                    <p>鮮桔茶 <br> Fresh Orange Tea</p>
+                                    <p>洛神花茶 <br> Roselle tea</p>
+                                    <p>檸檬養樂多 <br> Lemon Yakult</p>
+                                    <p>檸檬蜜茶 <br> Lemon Honey Tea</p>
+                                    <p>檸檬汁 <br> Lemon juice</p>
+                                    <p>檸檬青茶 <br> Lemon Green Tea</p>
+                                    <p>檸檬冬瓜茶 <br> Lemon Winter Melon Tea</p>
+                                    <p>百香養樂多 <br> Passion Yakult</p>
+                                </div>
+                                <div class="modal-footer">
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="porductfloat modal fade" id="plain" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">原味茶 plain</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  
+                                    <p>一品紅茶<br>Poinsettia tea </p>
+                                    <p>茉莉鮮綠茶<br>Jasmine Fresh Green Tea</p>
+                                    <p>台灣青茶<br>Taiwan Green Tea</p>
+                                    <p>安溪鐵觀音<br>Anxi Tieguanyin </p>
+                                    <p>四季春青茶<br>Four Seasons Spring Green Tea</p>
+                                    <p>冬瓜茶<br>Winter Melon Tea</p>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                       
                 </div>
             </div>
@@ -355,7 +555,37 @@
         </div>
         
         <div class="section footer">
+            
             <div class="store">
+                <div class="lemon6">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                        style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                        <path style="fill:#AA6100;"
+                            d="M306.267,79.236c-4.212,0-7.625-3.414-7.625-7.625v-41.13c-12.106,12.723-32.436,27.903-63.29,33.112
+        c-4.156,0.7-8.088-2.097-8.789-6.25c-0.7-4.152,2.097-8.087,6.249-8.788c47.5-8.02,65.897-42.917,66.657-44.399
+        c1.608-3.134,5.161-4.77,8.581-3.944c3.423,0.827,5.841,3.879,5.841,7.4v63.998C313.892,75.822,310.479,79.236,306.267,79.236z" />
+                        <path style="fill:#6DC82A;" d="M254.212,54.797c-1.596,3.996-3.335,7.93-5.236,11.794c-15.677,32.148-41.267,59.435-72.49,76.902
+        c-22.713,12.709-49.614,20.171-76.546,21.971c-13.705,0.915-27.41,0.366-40.566-1.698c-2.237-0.346-3.172-3.081-1.606-4.728
+        c3.264-3.426,6.283-7.086,9.038-10.94c17.334-24.299,26.169-56.66,48.862-77.98c16.562-15.565,37.719-24.766,60.076-28.06
+        c17.924-2.643,36.346-1.688,54.118,1.657l22.591,7.371C253.999,51.584,254.812,53.292,254.212,54.797z" />
+                        <path style="fill:#7ED63E;" d="M248.976,66.59c-15.677,32.148-41.267,59.435-72.49,76.902
+        c-22.713,12.709-49.614,20.171-76.546,21.971c14.447-23.231,23.628-51.627,44.195-70.944c16.562-15.565,37.719-24.766,60.076-28.06
+        C219.015,64.272,234.153,64.547,248.976,66.59z" />
+                        <path style="fill:#EEBF00;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+        c-3.985,8.113-10.736,14.732-19.083,18.758c-5.653,2.735-12.038,4.27-18.809,4.27c-16.745,0-31.202-9.425-37.892-23.028
+        c-5.388-10.96-13.522-20.374-24.075-26.505c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047
+        c10.441-6.019,18.514-15.301,23.892-26.098c6.72-13.512,21.117-22.845,37.79-22.845c6.761,0,13.156,1.535,18.809,4.26
+        c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+        C419.312,150.172,455.007,215.616,455.007,291.603z" />
+                        <path style="fill:#FFD422;" d="M455.007,291.603c0,75.834-35.564,141.177-86.774,170.864c-10.553,6.131-18.687,15.545-24.075,26.505
+        c-3.985,8.113-10.736,14.732-19.083,18.758c-8.347-4.026-15.098-10.645-19.083-18.758c-5.388-10.96-13.522-20.374-24.075-26.505
+        c-51.21-29.687-86.774-95.029-86.774-170.864c0-75.987,35.696-141.431,87.059-171.047c10.441-6.019,18.514-15.301,23.892-26.098
+        c3.996-8.032,10.695-14.579,18.982-18.585c8.286,4.006,14.986,10.553,18.981,18.585c5.378,10.797,13.451,20.08,23.892,26.098
+        C419.312,150.172,455.007,215.616,455.007,291.603z" />
+    
+                    </svg>
+                </div>
                 <div class="container">
                     <div class="row align-items-center justify-content-around">
                         <div class="col-4">
@@ -395,6 +625,12 @@
 
     <script>
         $(document).ready(function () {
+
+            
+            
+            
+
+
             $(".hamburger").click(function () {
                 $(this).toggleClass("is-active");
             });
