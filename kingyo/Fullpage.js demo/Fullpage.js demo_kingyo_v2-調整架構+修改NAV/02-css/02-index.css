@@ -62,6 +62,15 @@
     z-index: 99999;
 }
 
+.banner .title{
+    width: 100%;
+    color: #F1DC9A;
+    font-size: 500px;
+    position: absolute;
+    transform: translate(-45vh,20vh);
+    opacity: 0.7;
+}
+
 .porductfloat{
     position: absolute;
     top: 0;
