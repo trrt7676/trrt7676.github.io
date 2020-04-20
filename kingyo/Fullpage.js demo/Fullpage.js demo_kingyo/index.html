@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullpage.js demo</title>
+    <title>NEW_Kingyo</title>
 
+    <link rel="icon" href="img/title.png" type="image/x-icon"/>
+    <!-- Bootstrap 的 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- fullpage.JS 原本需要外連的 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css">
-    <link rel="stylesheet" href="./02-css/index.css">
+    <!-- fullpage.JS Demo 的 CSS -->
+    <link rel="stylesheet" href="./02-css/01-fullpageJS.css">
+    <!-- index 的 CSS (待整理)-->
+    <link rel="stylesheet" href="./02-css/02-index.css">
+    <!-- 新增的 index.css -->
+    <link rel="stylesheet" href="./02-css/03-new_index.css">
+
 </head>
 
 <body>
 
     <header>
         <div class="header-top clearfix">
-            <h1 class="l-left"><a href="#firstSection">Your Logo</a></h1>
+            <a class="l-left" href="#firstSection"><img height="70" src="img/logo.jpg" alt=""></a>
             <a class="l-right toggle-menu" href="#">
                 <i></i>
                 <i></i>
@@ -56,12 +67,131 @@
             </div>
         </section>
         <section class="vertical-scrolling">
-            <h2>fullPage.js</h2>
-            <h3>This is the second section</h3>
+            <div class="about container">
+                
+                <div class="txt">
+                    <h2>關於我們</h2>
+
+                    <p>給您一杯感動的好茶!</p>
+                    <p>以獨家黃金比例的-翡翠檸檬打響名號。</p>
+                    <p>看準台灣人手一杯飲料及未來全世界茶飲流行的潛在商機</p>
+                    <p>將台灣最好的鮮果與季節農產、熬煮蔗糖入茶</p>
+                    <p>讓客人以平價就喝得到高品質的好茶</p>
+                    <p>創造出清玉茶飲有別於其他飲料品牌的獨特優勢清玉品牌堅持以天然</p>
+                    <p>新鮮的原料製作茶飲</p>
+                    <p>每一杯飲料，都是秉持著「給客人一杯感動的好茶」的想法調製</p>
+                    <p>要把最好的那一杯飲料交付到顧客手裡</p>
+                    <p>讓每一位顧客，喝到的每一口茶都能感受到清玉的用心。</p>
+                    <p>在現代人重視健康飲品的觀念下</p>
+                    <p>帶動台灣一波翡翠檸檬與鮮果茶飲的風潮。</p>
+
+                </div>
+            </div>
         </section>
         <section class="vertical-scrolling">
-            <h2>fullPage.js</h2>
-            <h3>This is the third section</h3>
+            <div class="container product">
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="" data-toggle="modal" data-target="#taste">
+                            <img height="330" src="img/taste.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="" data-toggle="modal" data-target="#fresh">
+                            <img height="330" src="img/fresh.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="" data-toggle="modal" data-target="#plain">
+                            <img height="330" src="img/plain.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="porductfloat modal fade" id="taste" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalCenterTitle">口感茶Taste</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>珍珠紅/綠茶 <br> Pearl Red / Green Tea</p>
+                                <p>珍珠奶綠/奶茶 <br> Pearl milk green / milk tea</p>
+                                <p>鐵觀音珍奶 <br> Tieguanyin precious milk</p>
+                                <p>布丁奶茶 <br> Pudding milk tea</p>
+                                <p>檸檬愛玉 <br> Lemon Love Jade</p>
+                                <p>檸檬三姊妹 <br> Lemon Three Sisters</p>
+                                <p>翡翠檸檬愛玉 <br> Emerald Lemon Love Jade</p>
+                                <p>仙草凍奶茶 <br> Jelly grass milk tea</p>
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="porductfloat modal fade" id="fresh" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalCenterTitle">鮮味茶 Fresh</h3>
+                                <h3></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>鮮桔茶 <br> Fresh Orange Tea</p>
+                                <p>洛神花茶 <br> Roselle tea</p>
+                                <p>檸檬養樂多 <br> Lemon Yakult</p>
+                                <p>檸檬蜜茶 <br> Lemon Honey Tea</p>
+                                <p>檸檬汁 <br> Lemon juice</p>
+                                <p>檸檬青茶 <br> Lemon Green Tea</p>
+                                <p>檸檬冬瓜茶 <br> Lemon Winter Melon Tea</p>
+                                <p>百香養樂多 <br> Passion Yakult</p>
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="porductfloat modal fade" id="plain" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalCenterTitle">原味茶 plain</h3>
+                                <h3></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>一品紅茶<br>Poinsettia tea </p>
+                                <p>茉莉鮮綠茶<br>Jasmine Fresh Green Tea</p>
+                                <p>台灣青茶<br>Taiwan Green Tea</p>
+                                <p>安溪鐵觀音<br>Anxi Tieguanyin </p>
+                                <p>四季春青茶<br>Four Seasons Spring Green Tea</p>
+                                <p>冬瓜茶<br>Winter Melon Tea</p>
+
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <section class="vertical-scrolling">
             <h2>fullPage.js</h2>
@@ -80,8 +210,21 @@
         </section>
     </div>
 
+    <!-- bootstrap 的 JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- jQuery 的 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <!-- fullpage.JS 原本需要外連的 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <!-- fullpage.JS Demo 的 JS -->
     <script src="./03-js/index.js"></script>
     
 </body>
