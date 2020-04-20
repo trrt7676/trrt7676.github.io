@@ -2,7 +2,65 @@
     vertical-align: unset !important;
 }
 
+.lemon{
+    width: 50%;
+    margin: 0 auto;
+    transform: translateX(-10%)rotate(-45deg);
 
+}
+.bannerLemon1{
+    position: absolute;
+    width: 150px;
+    transform: translate(500%,-132%)rotate(-28deg)scale(0.3);
+}
+
+.bannerLemon2{
+    position: absolute;
+    width: 150px;
+    left: 30%;
+    transform: translate(230%,-159%)rotate(-35deg)scale(0.5);
+}
+
+.bannerLemon3{
+    position: absolute;
+    width: 150px;
+    left: 67%;
+    transform: translate(-235%,-90%)rotate(30deg)scale(1.5);
+}
+
+.bannerLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 99999;
+    transform: translate(0,230%)rotate(-28deg)scale(2.5);
+}
+
+.bannerLemon5{
+    position: absolute;
+    width: 150px;
+    transform: translate(355%,-199%)rotate(-68deg)scale(0.7);
+}
+
+.bannerLemon6{
+    position: absolute;
+    width: 150px;
+    transform: translate(100%,15%)rotate(82deg)scale(2);
+}
+
+#menu li:hover .lemon{
+    transform: translateX(-10%)rotate(-23deg);
+
+}
+
+.cup{
+    width: 500px;
+    transform: rotate(-30deg);
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    z-index: 99999;
+}
 
 .porductfloat{
     position: absolute;
@@ -12,10 +70,17 @@
 .porductfloat p{
     font-size: 16px;
 }
+
+.modal-title{
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+}
+
 .modal-content{
-    text-align: left;
-    background-color: rgb(246, 190, 190);
-    border: 20px solid rgb(246, 100, 100);
+    text-align: center;
+    background-color: #EDE2E2;
+    border: 20px solid #DBAFAF;
     border-radius: 10px;
 
 }
@@ -44,10 +109,11 @@ button.close:focus {
     font-size: 48px;
 }
 
-.about{
+.banner,.about,.business{
     position: relative;
 }
-.about img{
+
+.about img,.business img{
     filter: opacity(0.2);
 }
 .about .txt {
@@ -60,6 +126,19 @@ button.close:focus {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.business img{
+    width: 70%;
+}
+
+.business .txt {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,100%);
+
 }
 
 .about h2 {
