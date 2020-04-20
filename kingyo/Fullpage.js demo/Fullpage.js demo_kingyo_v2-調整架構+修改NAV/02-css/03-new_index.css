@@ -1,25 +1,4 @@
-@media ( max-width:768px ){
-    .about .txt {
-        width: 100%;
-    }
-}
-img{
-    vertical-align: unset !important;
-}
-.about{
-    position: relative;
-    /* background-image: url("/img/green-tea.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
-    
-}
-.about img{
-    filter: opacity(0.2);
-}
-.txt{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
+
+
+

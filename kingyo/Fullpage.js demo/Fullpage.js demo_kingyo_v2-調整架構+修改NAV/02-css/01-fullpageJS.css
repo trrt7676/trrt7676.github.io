@@ -130,7 +130,7 @@ ul, li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .header-top {
-	background: rgba(0, 47, 77, .3);
+	background: unset !important;
 	height: 70px;
 	padding: 0 10px;
 	position: fixed;
@@ -201,7 +201,7 @@ nav {
  	height: 0;
 	opacity: 0;
   box-sizing: border-box;
-	background: rgba(0, 47, 77, .25);
+	
 	position: fixed;
 	top: 70px;
 	width: 100%;
