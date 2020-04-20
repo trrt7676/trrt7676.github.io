@@ -3,7 +3,9 @@
         width: 100%;
     }
 }
-
+img{
+    vertical-align: unset !important;
+}
 .about{
     position: relative;
     /* background-image: url("/img/green-tea.png");
