@@ -190,7 +190,24 @@ footer p {
     padding: 20px 0;
 }
 @media ( max-width:768px ){
+    nav.hide{
+        background:unset !important;
+    }
     .about .txt {
         width: 100%;
+    }
+    #menu li .lemon{
+        max-width: 70px;
+    }
+    #menu li a{
+        display: flex;  
+        
+    }
+    #menu li h1{
+        
+        margin:auto;
+        order: 1;
+        
+
     }
 }

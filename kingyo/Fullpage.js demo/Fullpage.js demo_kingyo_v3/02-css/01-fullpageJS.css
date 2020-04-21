@@ -253,21 +253,21 @@ nav li:nth-child(even) a {
 }
 
 nav li:nth-child(odd) a:hover {
-	background: #F7DEAA;
+	background: #453659;
 	color: #FFFFFF;
 	text-decoration: none;
 }
 
 nav li:nth-child(even) a:hover {
-	background: #F7DEAA;
+	background: #453659;
 	color: #FFFFFF;
 	text-decoration: none;
 }
 
 nav li.active a,
 body.fp-viewing-fifthSection-1 #menu li:last-child a {
-  background: #453659;
-  color: #FFFFFF;
+	background: #453659;
+  	color: #FFFFFF;
 }
   
 
