@@ -239,7 +239,9 @@ footer{
     font-size: 16px;
     
 }
-
+.top{
+    display: none;
+}
 footer p {
     margin: 0;
     padding: 20px 0;
@@ -264,5 +266,19 @@ footer p {
         order: 1;
         
 
+    }
+
+
+
+    .top{
+        display: block;
+        width:70px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 999;
+    }
+    .top img{
+        width:100%;
     }
 }
