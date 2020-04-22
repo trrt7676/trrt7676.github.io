@@ -237,7 +237,7 @@ section.about {
     border: 2px solid #fff;
     padding: 60px;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 section.promotions {
@@ -323,7 +323,7 @@ section.porduct {
 
 .porduct .card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -352,7 +352,7 @@ footer {
 
 iframe {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
     margin: 50px 0;
 
