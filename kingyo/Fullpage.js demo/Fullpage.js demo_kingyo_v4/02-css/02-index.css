@@ -271,6 +271,25 @@ footer p {
         
 
     }
+    .banner .title{
+        width: 100%;
+        color: #F1DC9A;
+        font-size: 170px;
+        position: absolute;
+        transform: translate(-5%,20vh);
+        opacity: 0.7;
+        letter-spacing: 10px;
+        font-family: 'Chau Philomene One', sans-serif;
+        
+    }
+    .cup{
+        width: 300px;
+        transform: rotate(-30deg);
+        position: absolute;
+        bottom:0;
+        left: 40%;
+        z-index: 99999;
+    }
 
 
 
