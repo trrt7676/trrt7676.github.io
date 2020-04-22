@@ -50,10 +50,9 @@ nav .logo img {
     justify-content: flex-end;
     /* align-items: flex-end; */
     padding: 60px 20px 10px;
+   
 }
-.bar a:hover{
-    color:red;
-}
+
 
 .navbar a {
     display: block;
@@ -61,7 +60,27 @@ nav .logo img {
     text-decoration: none;
     margin-left: 40px;
     font-size: 20px;
+    
+    position: relative;
 }
+.navbar a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+    background-color: #806C86;
+   
+}
+.navbar a:hover::after {
+       width: 100%;
+
+}
+
+
+
 
 .banner {
     margin-top:86px ;
@@ -249,7 +268,7 @@ section.promotions {
 section.parallax {
     width: 100%;
     height: 500px;
-    background: url(img/34.jpg)fixed;
+    background: url("../img/34.jpg")fixed;
     background-size: cover;
 
 
