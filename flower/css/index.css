@@ -67,6 +67,9 @@ nav .logo img {
     
     position: relative;
 }
+.navbar a:hover{
+    color:#806C86;
+}
 .navbar a::after {
     content:'';
     position: absolute;
@@ -141,6 +144,7 @@ section.about {
 .about h2 {
     color: #493F4B;
     margin-bottom: 30px;
+    padding: 0 15px;
 }
 
 .about .item {
@@ -325,6 +329,35 @@ section.porduct {
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
+}
+#member {
+    background-color: #806C86;
+}
+#member h2{
+    margin: 30px 5px;
+    padding: 0 15px;
+}
+#member h4{
+    margin: 10px;
+    text-align: center;
+}
+#member h5{
+    font-size: 16px;
+    padding-left: 10px;
+}
+#member p{
+    padding: 10px;
+    text-align:justify;
+}
+#member .card{
+    background-color:#493F4B;
+    border: 0;
+    color:#fff;
+    padding: 10px;
+}
+#member .pic img{
+    width: 100%;
+    border-radius: 5px;
 }
 
 footer {
@@ -515,10 +548,10 @@ iframe {
         margin: unset;
     }
     .promotions .news li {
-        color: #D4B6C8;
-        font-size: 18px;
+       
+        font-size: 16px;
         margin-bottom: 20px;
-        padding-left: 20px;
+        padding-left: 15px;
     }
 
 }
