@@ -12,6 +12,8 @@
     position: absolute;
     width: 150px;
     transform: translate(518%,-120%)rotate(100deg)scale(0.3);
+
+    
 }
 
 .bannerLemon2{
@@ -25,7 +27,7 @@
     position: absolute;
     width: 150px;
     left: 67%;
-    z-index: 99;
+    z-index: 10000;
     transform: translate(-235%,-90%)rotate(30deg)scale(1.5);
 }
 
@@ -33,8 +35,10 @@
     position: absolute;
     width: 150px;
     left: 10%;
-    z-index: 99999;
+    z-index: 10000;
     transform: translate(0,230%)rotate(-28deg)scale(2.5);
+
+    
 }
 
 .bannerLemon5{
@@ -60,7 +64,7 @@
     position: absolute;
     bottom:0;
     left: 50%;
-    z-index: 99999;
+    z-index: 10000;
 }
 
 .banner .title{
@@ -75,12 +79,62 @@
     
 }
 
+.productLemon1{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(-100%,370%)rotate(28deg)scale(3);
+}
 
+.productLemon2{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(160%,390%)rotate(-30deg)scale(2.5);
+}
+
+.productLemon3{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(400%,370%)rotate(60deg)scale(0.5);
+}
+
+.productLemon4{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(600%,380%)rotate(50deg)scale(2);
+}
+.productLemon5{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(800%,390%)rotate(-60deg)scale(1);
+}
+
+@media ( max-width:1200px ){
+    .productLemon1{
+        transform: translate(-101%,500%)rotate(28deg)scale(2.5);
+    }
+
+    .productLemon2{
+        transform:translate(60%,580%)rotate(-30deg)scale(1);
+    }
+
+    
+}
 
 .porductfloat{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100001;
 }
 .porductfloat p{
     font-size: 16px;
@@ -145,6 +199,45 @@ button.close:focus {
     transform: translateX(-50%);
 }
 
+.aboutLemon1{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(-250%,400%)rotate(-28deg)scale(2.5);
+}
+
+.aboutLemon2{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(60%,450%)rotate(30deg)scale(1);
+}
+
+.aboutLemon3{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(300%,440%)rotate(-60deg)scale(2);
+}
+
+.aboutLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(500%,500%)rotate(-50deg)scale(0.5);
+}
+.aboutLemon5{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(700%,450%)rotate(60deg)scale(3);
+}
+
 .business img{
     width: 70%;
 }
@@ -152,6 +245,7 @@ button.close:focus {
 .business .txt {
     width:100%;
     position: absolute;
+    z-index: 100000;
     top: 0;
     left: 50%;
     width: 100%;
@@ -161,15 +255,51 @@ button.close:focus {
 .business .txt a{
     text-decoration: none;
 }
-.pointfloat{
+
+.businessLemon1{
     position: absolute;
-    top: -100px;
-    left: 0;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(-250%,400%)rotate(62deg)scale(2.5);
 }
-.addblockfloat{
+
+.businessLemon2{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(60%,450%)rotate(120deg)scale(1);
+}
+
+.businessLemon3{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(300%,400%)rotate(30deg)scale(2);
+}
+
+.businessLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(500%,500%)rotate(40deg)scale(0.5);
+}
+.businessLemon5{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(700%,450%)rotate(150deg)scale(3);
+}
+
+.pointfloat,.addblockfloat{
     position: absolute;
     top: -100px;
     left: 0;
+    z-index: 100001;
 }
 
 .pointfloat .modal-content,.addblockfloat .modal-content{
@@ -196,7 +326,7 @@ button.close:focus {
     border-radius: 50px;
     color:#fff;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
 }
 
 .pointfloat .modal-content p ,.addblockfloat .modal-content p{
@@ -209,7 +339,14 @@ button.close:focus {
 }
 .addblockfloat .fa-lemon{
     color:greenyellow;
+    margin: 0 10px 0 0;
 }
+
+.addblockfloat .modal-body{
+    margin: 0 auto;
+}
+
+
 .pointfloat .modal-content p span{
     margin-left: 20px;
 }
@@ -232,6 +369,7 @@ button.close:focus {
 .modal-open .modal {
     overflow:unset;
 }
+
 footer{
     width: 100%;
     position: absolute;
@@ -244,10 +382,12 @@ footer{
     font-size: 16px;
     
 }
+
 .top{
     display: none;
 }
 footer p {
+    bottom: 0;
     margin: 0;
     padding: 20px 0;
 }
@@ -260,7 +400,7 @@ footer p {
         transform: translate(4%,-200%);
     }
 
-    .pointfloat{
+    .pointfloat,.addblockfloat{
         transform: translateY(-60%);
     }
 }
@@ -313,7 +453,6 @@ footer p {
         position: absolute;
         bottom:0;
         left: 40%;
-        z-index: 99999;
     }
 
 
@@ -324,7 +463,7 @@ footer p {
         position: absolute;
         right: 10px;
         bottom: 10px;
-        z-index: 999;
+        z-index: 1;
     }
     .top img{
         width:100%;
