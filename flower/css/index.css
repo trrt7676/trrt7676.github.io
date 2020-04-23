@@ -16,7 +16,7 @@ body {
 :target:before {
     content: "";
     display: block;
-    height: 116px;
+    height: 100px;
     }
 nav {
     width: 100%;
@@ -494,7 +494,11 @@ iframe {
 .color p {
     color: #fff;
 }
-
+@media screen and (max-width: 992px) {
+    nav .logo img {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 767px) {
    
 
@@ -506,6 +510,10 @@ iframe {
         padding: unset;
         
     }
+    nav .logo img {
+        width: 30%;
+    }
+    
  
     .navbar .bar {
         display: none;
