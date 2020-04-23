@@ -1,0 +1,327 @@
+.header-top img{
+    vertical-align: unset !important;
+}
+
+.lemon{
+    width: 50%;
+    margin: 0 auto;
+    transform: translateX(-10%)rotate(-45deg);
+
+}
+.bannerLemon1{
+    position: absolute;
+    width: 150px;
+    transform: translate(518%,-120%)rotate(100deg)scale(0.3);
+}
+
+.bannerLemon2{
+    position: absolute;
+    width: 150px;
+    left: 30%;
+    transform: translate(230%,-159%)rotate(-35deg)scale(0.5);
+}
+
+.bannerLemon3{
+    position: absolute;
+    width: 150px;
+    left: 67%;
+    z-index: 99;
+    transform: translate(-235%,-90%)rotate(30deg)scale(1.5);
+}
+
+.bannerLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 99999;
+    transform: translate(0,230%)rotate(-28deg)scale(2.5);
+}
+
+.bannerLemon5{
+    position: absolute;
+    width: 150px;
+    transform: translate(355%,-199%)rotate(-68deg)scale(0.7);
+}
+
+.bannerLemon6{
+    position: absolute;
+    width: 150px;
+    transform: translate(100%,15%)rotate(82deg)scale(2);
+}
+
+#menu li:hover .lemon{
+    transform: translateX(-10%)rotate(-23deg);
+
+}
+
+.cup{
+    width: 500px;
+    transform: rotate(-30deg);
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    z-index: 99999;
+}
+
+.banner .title{
+    width: 100%;
+    color: #F1DC9A;
+    font-size: 500px;
+    position: absolute;
+    transform: translate(-35vh,20vh);
+    opacity: 0.7;
+    letter-spacing: 40px;
+    font-family: 'Chau Philomene One', sans-serif;
+    
+}
+
+
+@media ( max-width:768px ){
+    .bannerLemon1{
+        transform: translate(190%,-100%)rotate(100deg)scale(0.3);
+    }
+
+    .bannerLemon2{
+        transform: translate(60%,-120%)rotate(-35deg)scale(0.5);
+    }
+
+    .bannerLemon5{
+        transform: translate(100%,-145%)rotate(-68deg)scale(0.7);
+    }
+}
+.porductfloat{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.porductfloat p{
+    font-size: 16px;
+}
+
+.modal-title{
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+}
+
+.porductfloat .modal-content{
+    text-align: center;
+    background-color: #EDE2E2;
+    border: 20px solid #DBAFAF;
+    border-radius: 10px;
+
+}
+.modal-header ,.modal-footer {
+    border:0;
+}
+button.close:focus {
+    outline:none ;
+}
+
+.modal-content p{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.modal-backdrop {
+    display: none;
+   
+}
+
+
+.point,.addblock{
+    background-color: #828282;
+    color:#fff;
+    padding: 80px 0;
+    font-size: 48px;
+}
+
+@media ( max-width:992px ){
+    .point{
+        transform: translate(4%,-250%);
+    }
+
+    .addblock{
+        transform: translate(4%,-200%);
+    }
+
+    .pointfloat{
+        transform: translateY(-60%);
+    }
+}
+
+.banner,.about,.business{
+    position: relative;
+}
+
+.about img,.business img{
+    filter: opacity(0.2);
+}
+.about .txt {
+    width: 60%;
+    background-color: rgb(255, 255, 255, .15);
+    margin: 0 auto;
+    font-weight: 800;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.business img{
+    width: 70%;
+}
+
+.business .txt {
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,100%);
+
+}
+.business .txt a{
+    text-decoration: none;
+}
+.pointfloat{
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+.pointfloat .modal-content{
+    text-align: left;
+    background-color: #D9D0B8;
+    border:0;
+    border-radius: 10px;
+
+}
+.pointfloat button.close{
+    border-radius: 50%;
+    width: 35px;
+    background-color: #fff;
+}
+.pointfloat h3{
+    color:#fff;
+    text-align: center;
+    
+}
+.pointfloat h6{
+    width:250px;
+    font-size: 24px;
+    background-color: #545454;
+    border-radius: 50px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pointfloat .modal-content{
+   
+    padding: 5px;
+}
+.pointfloat .modal-content p {
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border:0;
+    letter-spacing:normal;
+   
+}
+.pointfloat .modal-content p span{
+    margin-left: 20px;
+}
+
+
+.about h2 {
+    margin-bottom: 40px;
+    position: relative;
+    
+}
+
+
+.about p {
+    font-size: 16px;
+    margin: 10px 30px;
+    
+   
+
+}
+.modal-open .modal {
+    overflow:unset;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #bebebe;
+    text-align: center;
+
+    color:#000;
+    line-height: 16px;
+    font-size: 16px;
+    
+}
+.top{
+    display: none;
+}
+footer p {
+    margin: 0;
+    padding: 20px 0;
+}
+@media ( max-width:768px ){
+    nav.hide{
+        background:unset !important;
+    }
+    .about .txt {
+        width: 100%;
+    }
+    #menu li .lemon{
+        max-width: 70px;
+    }
+    #menu li a{
+        display: flex;  
+        
+    }
+    #menu li h1{
+        
+        margin:auto;
+        order: 1;
+        
+
+    }
+    .banner .title{
+        width: 100%;
+        color: #F1DC9A;
+        font-size: 170px;
+        position: absolute;
+        transform: translate(-7%,20vh);
+        opacity: 0.7;
+        letter-spacing: 10px;
+        font-family: 'Chau Philomene One', sans-serif;
+        
+    }
+    .cup{
+        width: 300px;
+        transform: rotate(-30deg);
+        position: absolute;
+        bottom:0;
+        left: 40%;
+        z-index: 99999;
+    }
+
+
+
+    .top{
+        display: block;
+        width:70px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 999;
+    }
+    .top img{
+        width:100%;
+    }
+}
