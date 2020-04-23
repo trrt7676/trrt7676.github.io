@@ -339,21 +339,26 @@ section.porduct {
 }
 #member h4{
     margin: 10px;
+    color:#fff;
     text-align: center;
 }
 #member h5{
     font-size: 16px;
     padding-left: 10px;
+    color:#000;
 }
 #member p{
     padding: 10px;
     text-align:justify;
+    color:#fff;
 }
 #member .card{
     background-color:#493F4B;
     border: 0;
     color:#fff;
     padding: 10px;
+    min-height: 415px;
+    margin-bottom: 15px;
 }
 #member .pic img{
     width: 100%;
