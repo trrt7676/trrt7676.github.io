@@ -201,6 +201,10 @@ section.about {
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
     margin: 30px 0;
 }
+.hvr-ripple-out:before {
+    border-radius: 50%;
+    border: #493F4B solid 5px;
+}
 
 .buylist:nth-child(3) a {
     border-top: 5px solid rgb(226, 226, 226);
