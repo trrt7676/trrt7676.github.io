@@ -112,7 +112,7 @@
         </div>
     </section>
     <section id="buy" class="buy">
-        <div class="buy container">
+        <div class="container">
             <div class="row">
 
                 <div class="row col col-lg-12">
@@ -120,22 +120,28 @@
                         <h2>Buy</h2>
                     </div>
                     <div class="col-12  buylist col-lg-2 color">
+                        <div class="step"> <p> 01 step</p></div>
                         <a class="hvr-ripple-out" href="javascript:;">
                             <p>挑選</p>
                         </a></div>
                     <div class="col-12  buylist col-lg-2">
+                        <div class="step"> <p> 02 step</p></div>
                         <a class="hvr-ripple-out" href="javascript:;">
                             <p>開單</p>
                         </a></div>
                     <div class="col-12  buylist col-lg-2">
+                        <div class="step"> <p> 03 step</p></div>
                         <a class="hvr-ripple-out" href="javascript:;">
                             <p>批價</p>
-                        </a></div>
+                        </a>
+                    </div>
                     <div class="col-12  buylist col-lg-2">
+                        <div class="step"> <p> 04 step</p></div>
                         <a class="hvr-ripple-out" href="javascript:;">
                             <p>結帳</p>
                         </a></div>
                     <div class="col-12  buylist col-lg-2">
+                        <div class="step"> <p> 05 step</p></div>
                         <a class="hvr-ripple-out" href="javascript:;">
                             <p>取貨</p>
                         </a></div>
@@ -530,13 +536,16 @@
 
         var buylist = document.querySelectorAll('.buylist');
         var txt = document.querySelectorAll('.buytxt');
+        var step = document.querySelectorAll('.step');
         for (let index = 0; index < buylist.length; index++) {
             const buyclick = buylist[index];
             const txtshow = txt[index];
+            const stepwhite = step[index];
             buyclick.onclick = function () {
                 rem();
                 buyclick.classList.add('color');
                 txtshow.classList.add('show');
+                // stepwhite.classList.add('white');
             }
 
         }
@@ -546,6 +555,7 @@
                 const txtshow = txt[index];
                 buyclick.classList.remove('color');
                 txtshow.classList.remove('show');
+                // stepwhite.classList.remove('white');
             }
         }
 

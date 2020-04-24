@@ -136,8 +136,6 @@ section.about {
 .about,
 .buy {
 
-
-
     padding: 20px;
 }
 
@@ -185,11 +183,17 @@ section.about {
 .buylist p {
     transform: rotate(-45deg);
 }
-
+.buy{
+    padding: 50px;
+}
+.buy h2{
+    margin-bottom: 50px;
+}
 .buy .buylist a {
     text-align: center;
     display: block;
     color: #806C86;
+    
     font-size: 26px;
     text-decoration: none;
     line-height: 90px;
@@ -204,6 +208,18 @@ section.about {
 .hvr-ripple-out:before {
     border-radius: 50%;
     border: #493F4B solid 5px;
+}
+.buy .step{
+    color:#806C86;
+    position: absolute;
+    padding-top: 10px;
+    left: -40px;
+   
+    font-size: 20px;
+}
+.step.white{
+
+    color:#fff;
 }
 
 .buylist:nth-child(3) a {
