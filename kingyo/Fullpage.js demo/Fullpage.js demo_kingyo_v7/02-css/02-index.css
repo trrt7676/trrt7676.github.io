@@ -1,0 +1,1066 @@
+.header-top img{
+    vertical-align: unset !important;
+}
+
+.lemon{
+    width: 50%;
+    margin: 0 auto;
+    transform: translateX(-10%)rotate(-45deg);
+}
+
+.bannerLemon1{
+    position: absolute;
+    width: 150px;
+    transform: translate(518%,-120%)rotate(100deg)scale(0.3);
+}
+
+.bannerLemon2{
+    position: absolute;
+    width: 150px;
+    left: 30%;
+    transform: translate(230%,-159%)rotate(-35deg)scale(0.5);
+}
+
+.bannerLemon3{
+    position: absolute;
+    width: 150px;
+    left: 67%;
+    z-index: 10000;
+    
+    animation-name: bannerlemon3;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerlemon3 {
+    0% {
+       transform: translate(-235%,-90%)rotate(30deg)scale(0.3);
+       opacity:1;
+    }
+    25%{
+        transform: translate(-235%,-90%)rotate(120deg)scale(0.8);
+        opacity:0.5;
+    }
+    50% {
+        transform: translate(-235%,-90%)rotate(210deg)scale(1.1);
+        opacity:1;
+    }
+    75%{
+        transform: translate(-235%,-90%)rotate(300deg)scale(0.8);
+        opacity:0.5;
+    }
+    100% {
+        transform: translate(-235%,-90%)rotate(30deg)scale(0.3);
+        opacity:1;
+    }
+}
+
+.bannerLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    transform: translate(0,230%)rotate(-28deg)scale(2.5);
+
+    animation-name: bannerlemon4;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerlemon4 {
+    0% {
+       transform: translate(0,230%)rotate(-28deg)scale(2.5);
+       opacity:1;
+    }
+    25%{
+        transform: translate(100%,260%)rotate(62deg)scale(2.5);
+        opacity:0.7;
+    }
+    50% {
+        transform: translate(0,230%)rotate(152deg)scale(2.5);
+        opacity:0.5;
+    }
+    75%{
+        transform: translate(100%,200%)rotate(242deg)scale(2.5);
+        opacity:0.7;
+    }
+    100% {
+        transform: translate(0,230%)rotate(332deg)scale(2.5);
+        opacity:1;
+    }
+}
+
+.bannerLemon5{
+    position: absolute;
+    width: 150px;
+    transform: translate(355%,-199%)rotate(-68deg)scale(0.7);
+}
+
+.bannerLemon6{
+    position: absolute;
+    width: 150px;
+    
+    animation-name: bannerlemon6;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerlemon6 {
+    0% {
+       transform: translate(100%,15%)rotate(82deg)scale(2);
+       opacity:1;
+    }
+    25%{
+        transform: translate(100%,15%)rotate(172deg)scale(1.5);
+        opacity:0.5;
+    }
+    50% {
+        transform: translate(100%,15%)rotate(262deg)scale(1);
+        opacity:0;
+    }
+    75%{
+        transform: translate(100%,15%)rotate(352deg)scale(1.5);
+        opacity:0.5;
+    }
+    100% {
+        transform: translate(100%,15%)rotate(82deg)scale(2);
+        opacity:1;
+    }
+}
+
+@media ( max-width:768px ){
+    .bannerLemon1{
+        transform: translate(190%,-100%)rotate(100deg)scale(0.3);
+    }
+
+    .bannerLemon2{
+        transform: translate(60%,-120%)rotate(-35deg)scale(0.5);
+    }
+
+    .bannerLemon5{
+        transform: translate(100%,-145%)rotate(-68deg)scale(0.7);
+    }
+}
+
+
+#menu li:hover .lemon{
+    transform: translateX(-10%)rotate(-23deg);
+}
+
+.cup{
+    width: 500px;
+    transform: rotate(-30deg);
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    z-index: 10000;
+}
+
+.banner .title{
+    width: 100%;
+    color: #F1DC9A;
+    font-size: 500px;
+    position: absolute;
+    transform: translate(-35vh,20vh);
+    letter-spacing: 40px;
+    font-family: 'Chau Philomene One', sans-serif;
+    
+    animation-name: titlescale;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titlescale {
+    0% {
+        transform: translate(-35vh,20vh) scale(0);
+        opacity:0;
+    }
+    25%{
+        transform: translate(-35vh,20vh) scale(1);
+        opacity:0.5;
+    }
+    50% {
+        transform: translate(-35vh,20vh) scale(2);
+        opacity:1;
+    }
+    75%{
+        transform: translate(-35vh,20vh) scale(1);
+        opacity:0.5;
+    }
+    100% {
+        transform: translate(-35vh,20vh) scale(0);
+        opacity:0;
+    }
+}
+
+@media ( max-width:768px ){
+    @keyframes titlescale {
+        0% {
+            transform: translate(-150%,20vh) scale(0);
+            opacity:0;
+        }
+        25%{
+            transform: translate(-150%,20vh) scale(1);
+            opacity:0.5;
+        }
+        50% {
+            transform: translate(-150%,20vh) scale(2);
+            opacity:1;
+        }
+        75%{
+            transform: translate(-150%,20vh) scale(1);
+            opacity:0.5;
+        }
+        100% {
+            transform: translate(-150%,20vh) scale(0);
+            opacity:0;
+        }
+    }
+}
+
+.about img,.business img{
+    filter: opacity(0.2);
+}
+
+.about .txt {
+    width: 60%;
+    background-color: rgb(255, 255, 255, .15);
+    margin: 0 auto;
+    font-weight: 800;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aboutLemon1{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    
+    animation-name: aboutlemon1;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutlemon1 {
+    0% {
+       transform: translate(-250%,400%)rotate(-28deg)scale(2.5); 
+       opacity:0.4;
+    }
+    25%{
+        transform: translate(-150%,300%)rotate(62deg)scale(2); 
+        opacity:0.7;
+    }
+    50% {
+        transform: translate(-50%,400%)rotate(152deg)scale(1.5); 
+        opacity:1;
+    }
+    75%{
+        transform: translate(-150%,300%)rotate(242deg)scale(2); 
+        opacity:0.7;
+    }
+    100% {
+        transform: translate(-250%,400%)rotate(332deg)scale(2.5); 
+        opacity:0.4;
+    }
+}
+
+.aboutLemon2{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    
+    animation-name: aboutlemon2;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutlemon2 {
+    0% {
+       transform:  translate(60%,380%)rotate(30deg)scale(1);
+       opacity:1;
+    }
+    25%{
+        transform:  translate(160%,280%)rotate(120deg)scale(2);
+        opacity:0.6;
+    }
+    50% {
+        transform:  translate(-60%,480%)rotate(210deg)scale(1.5);
+        opacity:0.4;
+    }
+    75%{
+        transform:  translate(160%,280%)rotate(300deg)scale(0.5);
+        opacity:0.6;
+    }
+    100% {
+        transform:  translate(60%,380%)rotate(30deg)scale(1);
+        opacity:1;
+    }
+}
+
+.aboutLemon3{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    
+    animation-name: aboutlemon3;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutlemon3 {
+    0% {
+       transform: translate(300%,400%)rotate(-60deg)scale(2);
+       opacity:1;
+    }
+    25%{
+        transform: translate(300%,300%)rotate(30deg)scale(2.5);
+        opacity:0.6;
+    }
+    50% {
+        transform: translate(300%,200%)rotate(120deg)scale(2);
+        opacity:0.4;
+    }
+    75%{
+        transform: translate(300%,300%)rotate(210deg)scale(1.5);
+        opacity:0.6;
+    }
+    100% {
+        transform: translate(300%,400%)rotate(300deg)scale(2);
+        opacity:1;
+    }
+}
+
+.aboutLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    
+    animation-name: aboutlemon4;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutlemon4 {
+    0% {
+       transform:  translate(500%,400%)rotate(-50deg)scale(0.5);
+       opacity:0.4;
+    }
+    25%{
+        transform:  translate(500%,300%)rotate(40deg)scale(1.5);
+        opacity:0.6;
+    }
+    50% {
+        transform:  translate(600%,200%)rotate(130deg)scale(2);
+        opacity:1;
+    }
+    75%{
+        transform:  translate(500%,300%)rotate(220deg)scale(1.5);
+        opacity:0.6;
+    }
+    100% {
+        transform:  translate(500%,400%)rotate(310deg)scale(0.5);
+        opacity:0.4;
+    }
+}
+
+.aboutLemon5{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    
+    animation-name: aboutlemon5;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutlemon5 {
+    0% {
+       transform: translate(700%,380%)rotate(60deg)scale(3);
+       opacity:0.6;
+    }
+    25%{
+        transform: translate(650%,80%)rotate(150deg)scale(2);
+        opacity:1;
+    }
+    50% {
+        transform: translate(700%,-80%)rotate(240deg)scale(1);
+        opacity:0.4;
+    }
+    75%{
+        transform: translate(650%,80%)rotate(330deg)scale(2);
+        opacity:1;
+    }
+    100% {
+        transform: translate(700%,380%)rotate(60deg)scale(3);
+        opacity:0.6;
+    }
+}
+
+.productLemon1{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(-100%,300%)rotate(28deg)scale(3);
+
+    animation-name: productlemon1;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes productlemon1 {
+    0% {
+       transform: translate(-150%,300%)rotate(28deg)scale(3);
+       opacity:1;
+    }
+    25%{
+        transform: translate(-100%,250%)rotate(118deg)scale(2);
+        opacity:0.6;
+    }
+    50% {
+        transform: translate(-50%,200%)rotate(208deg)scale(1);
+        opacity:0.4;
+    }
+    75%{
+        transform: translate(-100%,250%)rotate(298deg)scale(2) ;
+        opacity:0.6;
+    }
+    100% {
+        transform: translate(-150%,300%)rotate(28deg)scale(3);
+        opacity:1;
+    }
+}
+
+.productLemon2{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    
+    animation-name: productlemon2;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes productlemon2 {
+    0% {
+       transform: translate(160%,300%)rotate(-10deg)scale(0.5);
+       opacity:1;
+    }
+    25%{
+        transform: translate(260%,250%)rotate(80deg)scale(1);
+        opacity:0.6;
+    }
+    50% {
+        transform: translate(160%,200%)rotate(170deg)scale(2.5);
+        opacity:0.4;
+    }
+    75%{
+        transform: translate(260%,250%)rotate(80deg)scale(1);
+        opacity:0.6;
+    }
+    100% {
+        transform: translate(160%,300%)rotate(-10deg)scale(0.5);
+        opacity:1;
+    }
+}
+
+.productLemon3{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    
+    animation-name: productlemon3;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes productlemon3 {
+    0% {
+       transform: translate(400%,330%)rotate(68deg)scale(0.5);
+       opacity:0.4;
+    }
+    25%{
+        transform: translate(300%,130%)rotate(158deg)scale(1.5);
+        opacity:0.6;
+    }
+    50% {
+        transform: translate(500%,230%)rotate(248deg)scale(2.5);
+        opacity:1;
+    }
+    75%{
+        transform: translate(300%,130%)rotate(338deg)scale(1.5);
+        opacity:0.6;
+    }
+    100% {
+        transform: translate(400%,330%)rotate(68deg)scale(0.5);
+        opacity:0.4;
+    }
+}
+
+.productLemon4{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    transform: translate(600%,320%)rotate(50deg)scale(2);
+
+    animation-name: productlemon4;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes productlemon4 {
+    0% {
+       transform: translate(600%,220%)rotate(-50deg)scale(2);
+       opacity:0.6;
+    }
+    25%{
+        transform: translate(700%,320%)rotate(140deg)scale(1);
+        opacity:0.4;
+    }
+    50% {
+        transform:translate(800%,170%)rotate(230deg)scale(0.5) ;
+        opacity:1;
+    }
+    75%{
+        transform: translate(700%,320%)rotate(320deg)scale(1);
+        opacity:0.4;
+    }
+    100% {
+        transform: translate(600%,220%)rotate(-50deg)scale(2);
+        opacity:0.6;
+    }
+}
+
+.productLemon5{
+    position: absolute;
+    width: 150px;
+    /* left: 10%; */
+    z-index: 10000;
+    
+    animation-name: productlemon5;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes productlemon5 {
+    0% {
+       transform: translate(800%,300%)rotate(-60deg)scale(1);
+       opacity:1;
+    }
+    25%{
+        transform: translate(500%,250%)rotate(30deg)scale(1.5);
+        opacity:0.4;
+    }
+    50% {
+        transform: translate(850%,0%)rotate(120deg)scale(2);
+        opacity:0.6;
+    }
+    75%{
+        transform:translate(500%,250%)rotate(-90deg)scale(1.5) ;
+        opacity:0.4;
+    }
+    100% {
+        transform:translate(800%,300%)rotate(-60deg)scale(1) ;
+        opacity:1;
+    }
+}
+
+@media ( max-width:1200px ){
+    @keyframes productlemon1 {
+        0% {
+           transform: translate(-101%,500%)rotate(28deg)scale(2.5);
+           opacity:1;
+        }
+        25%{
+            transform: translate(-61%,500%)rotate(118deg)scale(2.5);
+            opacity:0.4;
+        }
+        50% {
+            transform: translate(-11%,500%)rotate(208deg)scale(2.5);
+            opacity:0.6;
+        }
+        75%{
+            transform: translate(-61%,500%)rotate(298deg)scale(2.5);
+            opacity:0.4;
+        }
+        100% {
+            transform: translate(-101%,500%)rotate(-28deg)scale(2.5);
+            opacity:1;
+        }
+    }
+
+    
+}
+
+.porductfloat{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100001;
+}
+
+.porductfloat p{
+    font-size: 16px;
+}
+
+.modal-title{
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+}
+
+.porductfloat .modal-content{
+    text-align: center;
+    background-color: #EDE2E2;
+    border: 20px solid #DBAFAF;
+    border-radius: 10px;
+
+}
+.modal-header ,.modal-footer {
+    border:0;
+}
+
+button.close:focus {
+    outline:none ;
+}
+
+.modal-content p{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.modal-backdrop {
+    display: none;
+   
+}
+
+.point,.addblock{
+    background-color: #828282;
+    color:#fff;
+    padding: 80px 0;
+    font-size: 48px;
+}
+
+.banner,.about,.business{
+    position: relative;
+}
+
+
+
+.business img{
+    width: 70%;
+}
+
+.business .txt {
+    width:100%;
+    position: absolute;
+    z-index: 100000;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,100%);
+}
+
+.business .txt a{
+    text-decoration: none;
+}
+
+.businessLemon1{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    
+    
+    animation-name: businesslemon1;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes businesslemon1 {
+    0% {
+       transform: translate(-150%,400%)rotate(62deg)scale(2.5);
+       opacity:1;
+       z-index: 10000;
+    }
+    25%{
+        transform: translate(-200%,300%)rotate(-28deg)scale(1.5);
+        opacity:0.6;
+    }
+    50% {
+        transform: translate(-250%,100%)rotate(-118deg)scale(0.5);
+        opacity:0.4;
+    }
+    75%{
+        transform: translate(-200%,200%)rotate(152deg)scale(1.5);
+        opacity:0.6;
+    }
+    100% {
+        transform: translate(-150%,400%)rotate(62deg)scale(2.5);
+        opacity:1;
+        z-index: 10000;
+    }
+}
+
+.businessLemon2{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    
+    animation-name: businesslemon2;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes businesslemon2 {
+    0% {
+       transform: translate(60%,400%)rotate(120deg)scale(1);
+       opacity:0.4;
+       
+    }
+    25%{
+        transform: translate(60%,400%)rotate(30deg)scale(1.5);
+        opacity:0.6;
+    }
+    50% {
+        transform: translate(-160%,400%)rotate(-60deg)scale(2);
+        opacity:1;
+        z-index: 10000;
+    }
+    75%{
+        transform: translate(-60%,400%)rotate(-150deg)scale(1.5);
+        opacity:0.6;
+    }
+    100% {
+        transform: translate(60%,400%)rotate(120deg)scale(1);
+        opacity:0.4;
+    }
+}
+
+.businessLemon3{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    
+    animation-name: businesslemon3;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes businesslemon3 {
+    0% {
+       transform: translate(200%,350%)rotate(120deg)scale(2);
+       opacity:0.4;
+       
+    }
+    25%{
+        transform: translate(300%,230%)rotate(-60deg)scale(1.5);
+        opacity:1;
+    }
+    50% {
+        transform: translate(500%,300%)rotate(-150deg)scale(1);
+        opacity:0.6;
+    }
+    75%{
+        transform: translate(400%,300%)rotate(30deg)scale(1.5);
+        opacity:1;
+    }
+    100% {
+        transform: translate(200%,350%)rotate(120deg)scale(2);
+        opacity:0.4;
+        
+    }
+}
+
+.businessLemon4{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    
+    animation-name: businesslemon4;
+    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes businesslemon4 {
+    0% {
+       transform: translate(500%,415%)rotate(-50deg)scale(0.5);
+       opacity:1;
+    }
+    25%{
+        transform: translate(600%,215%)rotate(130deg)scale(1.5);
+        opacity:0.6;
+        z-index: 1000000;
+    }
+    50% {
+        transform: translate(700%,150%)rotate(220deg)scale(2.5);
+        opacity:0.4;
+        z-index: 1000000;
+    }
+    75%{
+        transform: translate(500%,415%)rotate(310deg)scale(1.5);
+        opacity:0.6;
+        z-index: 1000000;
+    }
+    100% {
+        transform: translate(500%,415%)rotate(-50deg)scale(0.5);
+        opacity:1;
+    }
+}
+
+.businessLemon5{
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    z-index: 10000;
+    
+    animation-name: businesslemon5;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes businesslemon5 {
+    0% {
+       transform: translate(700%,400%)rotate(150deg)scale(0.5);
+       opacity:1;
+    }
+    25%{
+        transform: translate(600%,200%)rotate(150deg)scale(2);
+        opacity:0.4;
+    }
+    50% {
+        transform: translate(800%,100%)rotate(150deg)scale(1);
+        opacity:0.6;
+    }
+    75%{
+        transform: translate(700%,300%)rotate(150deg)scale(2);
+        opacity:0.4;
+    }
+    100% {
+        transform: translate(700%,400%)rotate(150deg)scale(0.5);
+        opacity:1;
+    }
+}
+
+@media ( max-width:768px ){
+    @keyframes businesslemon1 {
+        0% {
+           opacity:0;
+        }
+        25%{
+            opacity:0;
+        }
+        50% {
+            opacity:0;
+        }
+        75%{
+            opacity:0;
+        }
+        100% {
+            opacity:0;
+        }
+    }
+    
+    @keyframes businesslemon3 {
+        0% {
+           opacity:0;
+        }
+        25%{
+            opacity:0;
+        }
+        50% {
+            opacity:0;
+        }
+        75%{
+            opacity:0;
+        }
+        100% {
+            opacity:0;
+        }
+    }
+}
+.pointfloat,.addblockfloat{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 100001;
+}
+
+.pointfloat .modal-content,.addblockfloat .modal-content{
+    position: absolute;
+    top: 100px;
+    text-align: left;
+    background-color: #D9D0B8;
+    border:0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pointfloat button.close,.addblockfloat button.close{
+    border-radius: 50%;
+    width: 35px;
+    background-color: #fff;
+}
+
+.pointfloat h3,.addblockfloat h3{
+    color:#fff;
+    text-align: center;
+}
+
+.pointfloat h6,.addblockfloat h6{
+    width:250px;
+    font-size: 24px;
+    background-color: #545454;
+    border-radius: 50px;
+    color:#fff;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.pointfloat .modal-content p ,.addblockfloat .modal-content p{
+    text-align: left;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border:0;
+    letter-spacing:normal;   
+}
+
+.addblockfloat .fa-lemon{
+    color:greenyellow;
+    margin: 0 10px 0 0;
+}
+
+.addblockfloat .modal-body{
+    margin: 0 auto;
+}
+
+.pointfloat .modal-content p span{
+    margin-left: 20px;
+}
+
+.about h2 {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about p {
+    font-size: 16px;
+    margin: 10px 30px;
+}
+
+.modal-open .modal {
+    overflow:unset;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #bebebe;
+    text-align: center;
+
+    color:#000;
+    line-height: 16px;
+    font-size: 16px;
+    
+}
+
+.top{
+    display: none;
+}
+
+footer p {
+    bottom: 0;
+    margin: 0;
+    padding: 20px 0;
+}
+
+@media ( max-width:992px ){
+    .point{
+        transform: translate(4%,-250%);
+    }
+
+    .addblock{
+        transform: translate(4%,-200%);
+    }
+
+    .pointfloat,.addblockfloat{
+        transform: translateY(-60%);
+    }
+}
+
+@media ( max-width:768px ){
+    
+
+    nav.hide{
+        background:unset !important;
+    }
+
+    .about .txt {
+        width: 100%;
+    }
+
+    #menu li .lemon{
+        max-width: 70px;
+    }
+
+    #menu li a{
+        display: flex;  
+    }
+
+    #menu li h1{
+        margin:auto;
+        order: 1;
+    }
+
+    
+
+    .cup{
+        width: 300px;
+        transform: rotate(-30deg);
+        position: absolute;
+        bottom:0;
+        left: 40%;
+    }
+
+    .top{
+        display: block;
+        width:70px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1;
+    }
+
+    .top img{
+        width:100%;
+    }
+}
