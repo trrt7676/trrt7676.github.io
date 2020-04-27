@@ -1,0 +1,17 @@
+@import'test2';
+
+$red:red;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    @include fontsize(50px);
+    @include style8();
+    @include pinddingr(0px,0px, 0px ,30px)
+    //@mixin
+    //@include
+}

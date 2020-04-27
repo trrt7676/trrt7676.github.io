@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="utf-8">
+<title>佳香雞排</title>
+<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="font/fontello-8fb9a46e/css/fontello.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./css/animate.css">
+<link rel="stylesheet" href="./css/hover.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+	
+	
+	$('.menuBTN').click(function(){
+		  $('.linkBAR').slideToggle(800);
+  });
+		
+	$(".top").click(function(){
+		  $("html,body").animate({scrollTop:0},900);
+  });	
+
+  $(".top").hide();
+
+  $(document).scroll(function(){
+    var over = $(window).scrollTop();
+    if(over>150){
+        $(".top").fadeIn(800);
+    }else{
+        $(".top").fadeOut(800);
+    }
+
+  });
+
+});
+
+</script>
+</head>
+
+<body>
+<div class="warp">
+  <header>
+    <div class="cont">
+    
+    <img class="animated bounceInLeft" src="img/LOGO.png" width="172" height="167" alt=""/>
+      
+      
+      <a href="javascript:;" class="icon-menu menuBTN"></a>
+     
+      <ul> 
+        <li><a href="about.html" class="hvr-float-shadow">關於佳香</a></li>
+        <li><a href="product.html" class="hvr-float-shadow" >佳香之味</a></li>
+        <li><a href="map.html" class="hvr-float-shadow">尋找佳香</a></li>
+      </ul>
+    </div>
+  </header>
+  <ul class="linkBAR">
+    <li><a href="#about" id="aboutBTN" class="hvr-wobble-to-top-right">關於佳香</a></li>
+    <li><a href="#menu" id="menuBTN">佳香之味</a></li>
+    <li><a href="#map" id="mapBTN">尋找佳香</a></li>
+  </ul>
+  <div class="box1">
+    <div class="cont">
+      
+      
+      <img src="img/box1.jpg" width="300" height="500" alt=""/>
+      <img src="img/box2.jpg" width="300" height="500" alt=""/>
+      <img src="img/box3.jpg" width="300" height="500" alt=""/>
+      
+   </div>
+  </div>
+  <div class="box3">
+    <div class="cont">
+      <h3>最新活動</h3>
+    </div>
+  </div>
+  
+  <div class="box2">
+    <div class="cont">
+      <ul class="wall">
+        <li class="wall-1">
+          <img src="img/line.png" width="128" height="112" alt=""/> 
+          
+          
+          <h4> 外送服務</h4>
+                
+        </li>
+        <li class="wall-2">
+          <img src="img/goodindex.png" width="104" height="115" alt=""/>
+          
+          
+          <h4> 按讚優惠</h4>
+                
+        </li>
+        <li class="wall-3">
+          <img src="img/p.png" width="114" height="120" alt=""/> 
+          
+          
+          <h4> 滿額好禮</h4>
+                
+        </li>
+      </ul>
+    </div>
+  
+  </div>
+  
+  <div class="cont">
+  <div class="excellent">
+ <h2>好康優惠</h2>
+ <p>  第一重<br>第二重<br>第三重
+   
+ </p>
+  </div>
+  <div class="flavor">
+  <h2>美味風味</h2>
+  <p>辣味：<br>胡椒：<br>芥末：<br>梅子：<br>海苔： </p>
+  </div>
+  </div>
+  <p class="top"><a href="javascript:;">TOP</a></p>
+  
+  
+  
+  
+  
+  
+  
+  <footer>
+      <div class="cont">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5043443822446!2d120.69768661524287!3d24.154038984392027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d59f0a4809b%3A0xd23032bf9f7fa1c6!2zNDA05Y-w5Lit5biC5YyX5Y2A5p2x5YWJ5p2x6KGX!5e0!3m2!1szh-TW!2stw!4v1513592740083" width="600" height="250" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+        <img class="aa" src="img/QR.png" width="111" height="111" alt=""/>
+          
+          <img src="img/search.png" width="221" height="30" alt=""/> 
+         <p> 
+          地址：台中市北區東光東街<br>
+          電話：0908922361
+        </p>
+      </div>
+  
+  
+  </footer>
+</div>
+</body>
+</html>

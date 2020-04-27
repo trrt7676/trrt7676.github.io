@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Pacifico', 'cursive','微軟正黑體';
+          
+    }
+    .banner{
+       
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(135deg,#123456 10%,#654321 30%,transparent 50%),
+                    url("https://picsum.photos/1200/600?random=2") right center /
+                    auto 100%;
+    }
+    .container{
+        height: 100%;
+      
+        width: 1200px;
+        margin:auto;
+    }
+    .container-txt{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        align-items: flex-start;
+    }
+    .container-txt h1{
+        font-size: 80px;
+        border-bottom:1px solid green;
+        padding-bottom: 0.1em;
+        margin-bottom: 0.1em;
+    }   
+    .container-txt h1 small{
+        font-size:50px;
+        display: block;
+
+    }
+    .container-txt h2{
+
+    }
+    .container-txt p{
+
+    }     
+    .wrap{
+
+        width: 100%;
+        height: 300px;
+        padding:50px 0;
+        display: flex;
+    }
+    .wrap .item{
+        width: 25%;
+        
+        position: relative;
+        
+    }
+    .wrap .item img{
+        width:100%;
+        height: 300px;
+    }  
+    .wrap .item .txt{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        text-align: center;
+        color:#FFF;
+        background-color:rgb(0,0,0,0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition:opacity 0.5s;
+    } 
+    .item:hover .txt{
+        opacity:1;
+    }
+    .wrap .item p:before{
+        content: '';
+        display: block;
+        width:0%;
+        height: 2px;
+        background-color: red;
+        transition:width .3s .6s;
+    }
+    .wrap .item:hover p:before{
+        width:100%;
+    }
+    .wrap .item p{
+        font-size:12px;
+        font-weight: 10;
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="container">
+            <div class="container-txt">
+                <h1>希望戀曲
+                    <small>十周年慶</small>
+                </h1>
+                <h2>黑帝斯</h2>
+                <p>挑戰黑暗四天王<br>CatRed</p>
+            </div>
+        </div>
+    </div>
+
+
+  <div class="wrap">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?20" alt="">
+          <div class="txt">
+              <h3>哈比兔</h3>
+              <p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, magnam asperiores quam ducimus repudiandae tempore pariatur delectus et. Quae obcaecati maxime provident unde alias. Aliquam accusamus odit atque iste quod?</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300?21" alt="">
+            <div class="txt">
+                <h3>飛天豬</h3>
+                <p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, magnam asperiores quam ducimus repudiandae tempore pariatur delectus et. Quae obcaecati maxime provident unde alias. Aliquam accusamus odit atque iste quod?</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300?22" alt="">
+            <div class="txt">
+                <h3>惡魔王子</h3>
+                <p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, magnam asperiores quam ducimus repudiandae tempore pariatur delectus et. Quae obcaecati maxime provident unde alias. Aliquam accusamus odit atque iste quod?</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300?23" alt="">
+            <div class="txt">
+                <h3>冰雪女王</h3>
+                <p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, magnam asperiores quam ducimus repudiandae tempore pariatur delectus et. Quae obcaecati maxime provident unde alias. Aliquam accusamus odit atque iste quod?</p>
+            </div>
+        </div>
+    </div>
+      
+      
+      
+        </div>
+  
+
+    
+
+</body>
+</html>

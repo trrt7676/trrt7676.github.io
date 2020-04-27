@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+    .hader{
+        width:800px;
+        margin:auto;
+        background-color: #888;
+        height:80px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .nav {
+        display: flex;   
+    }
+    .nav li {
+        width:100px;
+        height:30px;
+        background-color: rgb(120, 5, 5);
+        text-align: center;line-height: 30px;
+    }
+    .nav li:hover {
+        background-color: #222;
+    }
+    .nav li:hover>a{
+       color: #fff;
+    }
+    .nav li a{
+        color:aqua;
+    }
+    .nav > li + li{
+        margin-left: 30px;
+    }
+    .nav1,.nav2,.nav3{
+        display: none;    
+    }
+    .nav1 > li,.nav2 > li,.nav3 > li{
+        position: relative;
+    }
+    .nav1 > li{background-color: rgb(255, 150, 150);}
+    .nav2 > li{background-color: rgb(150, 255, 150);}
+    .nav3 > li{background-color: rgb(150, 150, 255);}
+
+    .nav1 > li + li,.nav2 > li + li,.nav3 > li + li{
+        border-top:1px solid #fff;
+
+    }
+    .nav > li:hover > .nav1,
+    .nav1 > li:hover > .nav2,
+    .nav2 > li:hover > .nav3 {
+       display: block;
+    }
+    .nav2,.nav3{
+        position: absolute;
+        top:0;
+        right:-99px;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="hader">
+        <ul class="nav">
+            <li>
+                <a href="#">55</a>
+                <ul class="nav1">
+                    <li>
+                        <a href="#">55</a>
+                        <ul class="nav2">
+                            <li>
+                                <a href="#">55</a>
+                                <ul class="nav3">
+                                        <li>
+                                            <a href="#">55</a>
+                                            
+                                        </li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">55</a></li>
+                                       
+                                    </ul>
+                            </li>
+                            <li><a href="#">55</a></li>
+                            <li><a href="#">55</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">55</a>
+                        <ul class="nav2">
+                            <li>
+                                <a href="#">55</a>
+                                <ul class="nav3">
+                                        <li>
+                                            <a href="#">55</a>
+                                            
+                                        </li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">55</a></li>
+                                       
+                                    </ul>
+                            </li>
+                            <li><a href="#">55</a></li>
+                           
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">55</a>
+                        <ul class="nav2">
+                            <li>
+                                <a href="#">55</a>
+                                
+                            </li>
+                            <li><a href="#">55</a></li>
+                            <li><a href="#">55</a></li>
+                            <li><a href="#">55</a></li>
+                            <li><a href="#">55</a></li>
+                        </ul>
+
+
+
+                    </li>
+                    <li>
+                        <a href="#">55</a>
+                        <ul class="nav2">
+                            <li>
+                                <a href="#">55</a>
+                                
+                            </li>
+                            <li><a href="#">55</a></li>
+                            <li><a href="#">55</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">55</a></li>
+                </ul>
+            </li>
+            <li><a href="#">55</a></li>
+            <li><a href="#">55</a></li>
+            <li>
+                <a href="#">55</a>
+                <ul class="nav1">
+                        <li>
+                            <a href="#">55</a>
+                            <ul class="nav2">
+                                <li>
+                                    <a href="#">55</a>
+                                    <ul class="nav3">
+                                        <li>
+                                            <a href="#">55</a>
+                                            
+                                        </li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">55</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="#">55</a></li>
+                                <li>
+                                    <a href="#">55</a>
+                                    <ul class="nav3">
+                                        <li>
+                                            <a href="#">55</a>
+                                            
+                                        </li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">55</a></li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">55</a>
+                            <ul class="nav2">
+                                <li>
+                                    <a href="#">55</a>
+                                    <ul class="nav3">
+                                            <li>
+                                                <a href="#">55</a>
+                                                
+                                            </li>
+                                            <li><a href="#">55</a></li>
+                                            <li><a href="#">55</a></li>
+                                           
+                                        </ul>
+                                </li>
+                                <li><a href="#">55</a></li>
+                               
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">55</a>
+                            <ul class="nav2">
+                                <li>
+                                    <a href="#">55</a>
+                                    
+                                </li>
+                                <li><a href="#">55</a></li>
+                                <li><a href="#">55</a></li>
+                                <li><a href="#">55</a></li>
+                                <li><a href="#">55</a></li>
+                            </ul>
+    
+    
+    
+                        </li>
+                        <li>
+                            <a href="#">55</a>
+                            <ul class="nav2">
+                                <li>
+                                    <a href="#">55</a>
+                                    
+                                </li>
+                                <li><a href="#">55</a></li>
+                                <li><a href="#">55</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">55</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">55</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tage練習</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        #tabs {
+            width: 720px;
+
+            position: relative;
+            border: 1px solid #666;
+            border-top: 1px solid transparent;
+            margin: 30px auto 0;
+        }
+
+        #tabs>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: -28px;
+            left: -1px;
+            z-index: 1;
+            width: 720px;
+            display: flex;
+        }
+
+
+
+        #tabs>ul>li>a {
+            text-decoration: none;
+            padding: 4px;
+            border: 1px solid #666;
+            background-color: #CCC;
+            color: #FFF;
+            border-radius: 5px 5px 0 0;
+            display: block;
+            width: 120px;
+        }
+
+        #tabs>ul>li.active>a {
+            background-color: #fff;
+            color: #666;
+            border-bottom: transparent;
+        }
+
+        #tabs>div {
+            display: none;
+        }
+
+        #tabs>div.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li>
+                <a href="#">1.Nunc tincidunt</a>
+            </li>
+            <li>
+                <a href="#">2.Proin dolor</a>
+            </li>
+            <li>
+                <a href="#">3.Aenean lacinia</a>
+            </li>
+            <li>
+                <a href="#">4.Aenean lacinia</a>
+            </li>
+            <li>
+                <a href="#">5.Aenean lacinia</a>
+            </li>
+            <li>
+                <a href="#">6.Aenean lacinia</a>
+            </li>
+        </ul>
+        <div id="tabs-1">
+            <p>111Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin
+                mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus
+                auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.
+                Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius
+                sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        </div>
+        <div id="tabs-2">
+            <p>222Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
+                Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus,
+                ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
+                Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean
+                vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus
+                pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur
+                tortor et purus.</p>
+        </div>
+        <div id="tabs-3">
+            <p>333Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan,
+                mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
+                pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat
+                nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi.
+                Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis,
+                pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque.
+                Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac,
+                tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit.
+                Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+        <div id="tabs-4">
+            <p>444Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin
+                mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus
+                auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.
+                Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius
+                sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        </div>
+        <div id="tabs-5">
+            <p>555Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
+                Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus,
+                ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
+                Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean
+                vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus
+                pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur
+                tortor et purus.</p>
+        </div>
+        <div id="tabs-6">
+            <p>666Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan,
+                mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
+                pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat
+                nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi.
+                Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis,
+                pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque.
+                Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac,
+                tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit.
+                Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>        
+        //$("#tabs>div:not(:eq(0))").hide();
+        $("#tabs>div:first, #tabs>ul>li:eq(0)").addClass("active");
+
+        $("#tabs>ul>li>a").click(function (e) {
+            e.preventDefault();
+            // $("#tabs>ul>li").removeAttr("class");
+            $("#tabs>ul>li").removeClass('active');
+            var n = $(this).parent().addClass("active").index();
+            // console.log(n);
+            // $("#tabs>div").removeAttr("class").eq(n).addClass("active");
+            $("#tabs>div").removeClass('active').eq(n).addClass("active");
+            // $(this).parent().addClass("active");
+        });    
+    </script>
+
+</body>
+
+</html>

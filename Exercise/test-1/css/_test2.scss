@@ -1,0 +1,30 @@
+
+
+
+
+@mixin style8(){
+    .box{
+        width:480px;
+        background-color: rgb(136, 218, 136);
+        height: 480px;
+        .container{
+            width:300px;
+            margin: 0 auto;
+            background-color: rgb(206, 130, 209);
+            a{
+                color:rgb(0, 89, 255);
+                &:hover{
+                    color:$red;
+                }
+            }
+    
+        }
+    }
+}
+
+@mixin pinddingr($pi1,$pi2,$pi3,$pi4){
+    padding: $pi1 $pi2 $pi3 $pi4 ;
+}
+@mixin fontsize($size){
+    font-size: $size;
+}

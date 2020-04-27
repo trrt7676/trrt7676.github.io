@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>愛心幸運草練習</title>
+    <style>
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            top: 50%;
+            left: 50%;
+            margin-top: -45px;
+            margin-left: -50px;
+
+        }
+        .heartbig{
+            position: absolute;
+            width:200px;
+            height: 180px;
+            
+            top: 15%;
+            left:15%;
+        }
+        .heartbig::before,.heartbig::after{
+            content:'';
+            top: 0;
+            right: 0;
+            transform: rotate(-45deg);
+            width:100px;
+            height: 170px;
+            position: absolute;
+            background-color: rgb(13, 219, 47);
+            transform-origin: 0 100% ;
+            border-radius: 50px 50px 0 0;
+        }
+        .heartbig::after{
+            left: 0;
+            background-color:  rgb(13, 219, 47);
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            
+        }
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #f1c5cf;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+
+        }
+        .positionRight{
+            transform: rotate(90deg);
+            transform-origin: 50% 100%;
+        }
+        .positionLeft{
+            transform: rotate(-90deg);
+            transform-origin: 50% 100%;
+        }
+        .positionBottom{
+            transform: rotate(180deg);
+            transform-origin: 50% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart"></div>
+    <div class="heartbig position"></div>
+    <div class="heartbig positionRight"></div>
+    <div class="heartbig positionLeft"></div>
+    <div class="heartbig positionBottom"></div>
+</body>
+
+</html>

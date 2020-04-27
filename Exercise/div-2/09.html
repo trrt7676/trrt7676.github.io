@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/font.js"></script>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html,body{
+        height:100vh;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        background:linear-gradient(45deg,#fff,#000);
+    }
+    .wrap{
+        width: 960px;
+        margin:100px auto;
+        display: flex;
+        
+        padding-top:50px;
+    }
+    .item{
+        width:370px;
+        margin:0 15px;
+        text-align:center;
+        border:10px solid rgb(243, 152, 152);
+        border-radius: 30px;
+        box-shadow: 10px 20px 50px;
+    }
+    .item .icon{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(243, 0, 152);
+        margin:-50px auto 0;
+        font-size: 50px;
+        border-radius:50%;
+        line-height: 100px;
+        position: relative;
+    }
+    .item .icon:before{
+        content: "";
+        width:100%;
+        height:100%;
+        position: absolute;
+        border-top:10px solid rgb(243, 152, 152);
+        border-right:10px solid transparent;
+        border-bottom:10px solid transparent;
+        border-left:10px solid rgb(243, 152, 152);
+        top:-10px;
+        left:-10px;
+        transform: rotate(45deg);
+        border-radius:50%;
+
+    }
+    .item .txt {
+        padding: 20px;
+
+    }
+    .item:hover .ss{
+        animation: ss .5s infinite linear alternate;
+    }
+    @keyframes ss{
+          0%{ transform: rotate(10deg);}
+        100%{ transform: rotate(-10deg);}   
+    }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="icon"><i class="ss fab fa-accusoft"></i></div>
+            <div class="txt">
+                <h2>標題</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque veniam non nemo obcaecati, aperiam vero ut asperiores hic distinctio esse numquam vitae quia deleniti praesentium molestiae eveniet quisquam beatae. Facere!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="ss fab fa-apple"></i></div>
+            <div class="txt">
+                <h2>標題</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque veniam non nemo obcaecati, aperiam vero ut asperiores hic distinctio esse numquam vitae quia deleniti praesentium molestiae eveniet quisquam beatae. Facere!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="ss fas fa-bell"></i></div>
+            <div class="txt">
+                <h2>標題</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque veniam non nemo obcaecati, aperiam vero ut asperiores hic distinctio esse numquam vitae quia deleniti praesentium molestiae eveniet quisquam beatae. Facere!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手風琴</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .page {
+            width: 600px;
+           
+
+            margin: 0 auto;
+            background: rgb(99, 99, 98);
+        }
+
+        .page h2 {
+            cursor: pointer;
+            padding: 5px 0;
+        }
+
+        .page p {
+            display: none;
+            background: #ffe5d2;
+            padding: 10px;
+        }
+        .page .show{
+            display: block;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+   
+    <script>
+        $(document).ready(function () {
+            $(".page h2").click(function () {
+                
+                // if (!$(this).next("p").is(":visible"))
+                if ($(this).next("p").is(":hidden")) {
+                    $(".page p").slideUp();
+                    $(this).next("p").slideDown();
+
+                }
+            });
+
+
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <!-- div.page>(h2{Title $}+p>lorem*2)*10 -->
+    <div class="page">
+        <h2>Title 1</h2>
+        <p class="show">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde necessitatibus ullam expedita cum optio debitis
+                beatae eius similique repudiandae. Quod alias aperiam, praesentium officia distinctio neque maxime porro
+                velit optio?</span>
+            
+        </p>
+        <h2>Title 2</h2>
+        <p>
+            <span>Eos ipsa voluptas assumenda accusamus ex alias ratione sunt ab voluptate delectus harum corporis incidunt praesentium
+                voluptatibus porro, tempore quisquam, quia aspernatur animi earum? Iure tempora impedit provident veritatis!
+                Recusandae!</span>
+            
+        </p>
+        <h2>Title 3</h2>
+        <p>
+            <span>Eius sed natus excepturi praesentium blanditiis. Commodi illo eveniet modi tempore ipsum ipsa culpa! Esse dignissimos
+                delectus illum. Dolorum hic ullam sequi deserunt reiciendis cupiditate illo nihil repellendus ab quis.</span>
+            
+        </p>
+        <h2>Title 4</h2>
+        <p>
+            <span>Placeat explicabo quaerat sint ipsam maxime! Quo asperiores deserunt dignissimos corporis totam at ratione possimus
+                voluptatibus tenetur, voluptates, placeat natus reiciendis maxime, incidunt molestias perspiciatis quos!
+                Tempore facilis adipisci dolor?</span>
+            
+        </p>
+        <h2>Title 5</h2>
+        <p>
+            <span>Amet, ipsa qui? Obcaecati amet laboriosam, at voluptatem eligendi dolore ipsum doloremque accusamus architecto
+                pariatur ad ducimus? Necessitatibus, architecto ex quis pariatur sapiente mollitia beatae impedit deleniti
+                nesciunt natus? Aliquam!</span>
+            
+        </p>
+        <h2>Title 6</h2>
+        <p>
+            <span>Illo ducimus sapiente incidunt inventore officia voluptatem earum neque, corrupti cum veritatis beatae sunt magni,
+                a saepe iure numquam ipsa molestiae! Tenetur nihil delectus aliquam reiciendis excepturi, doloribus praesentium
+                aliquid!</span>
+            
+        </p>
+        <h2>Title 7</h2>
+        <p>
+            <span>Omnis ipsam exercitationem distinctio voluptas. Consequuntur fuga facilis quisquam saepe dolorum, voluptatum
+                nulla iusto corporis nisi. Voluptate, laudantium dolore eligendi quis eaque necessitatibus tempora numquam
+                magnam aut unde voluptas ad.</span>
+            
+        </p>
+        <h2>Title 8</h2>
+        <p>
+            <span>Id totam inventore architecto ducimus amet odio deserunt in officia aut! Voluptates itaque, dolorem in error
+                ullam soluta asperiores fugiat a sed delectus amet! Ipsum sed optio iste dolores molestiae.</span>
+            
+        </p>
+        <h2>Title 9</h2>
+        <p>
+            <span>Quam sint, in vel aliquam debitis culpa facilis sit cupiditate odio tempore eveniet incidunt. Suscipit et sunt
+                dolore ea eligendi nobis, reprehenderit perferendis at quae? Illum esse corporis facilis quos?</span>
+            
+        </p>
+        <h2>Title 10</h2>
+        <p>
+            <span>Et corporis laudantium fugit aperiam voluptas voluptates saepe molestiae, natus ipsum quidem, dolorem commodi
+                iure dolores veritatis ducimus animi aspernatur cum obcaecati cupiditate non blanditiis. Ratione facilis
+                at quidem officiis.</span>
+           
+        </p>
+    </div>
+
+
+</body>
+
+</html>

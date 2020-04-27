@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/font.js"></script>
+    
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html,body{
+        height:100vh;
+    }
+    body{
+        display: flex;
+       
+        background:linear-gradient(45deg,forestgreen,#ff0);
+    }
+    .list{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #000;
+    }
+    .list li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        background-color:  rgb(245, 116, 116);
+        justify-content: center;
+        position: relative;
+        font-size: 20px;
+        box-shadow: 0px 0px 0px 5px rgb(245, 0, 116) ;
+    }
+    .list li .ss{
+        font-size: 30px;
+    }
+    .list li + li{
+        margin-left: 100px;
+    }
+    .list li + li::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width:100px;
+        height:5px;
+        background-color: rgb(245, 116, 116);
+        top:0;
+        bottom:0;
+        margin:auto;
+        left:-100px;
+    }
+    .list li.none ~ li{
+        background-color: #999;
+        box-shadow: 0px 0px 0px 5px  #666 ;
+    }
+    .list li.none ~ li::before{
+        background-color: #999;
+    }
+
+
+    </style>
+</head>
+<body>
+    <ol class="list">
+        <li><i class="ss fas fa-bell"></i>進化</li>
+        <li class="none"><i class="ss fas fa-bell"></i>潛能解放</li>
+        <li><i class="ss fas fa-bell"></i>異空轉生</li>
+        <li><i class="ss fas fa-bell"></i>究極融煉</li>
+    </ol>
+    
+</body>
+</html>

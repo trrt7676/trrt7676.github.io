@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>文件載入後加顏色</title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        function red() {
+            $("p").addClass("red");
+            $("p:last-child").addClass("blue");
+
+        }
+        $(document).ready(red);
+        // $(document).ready(function(){
+        //     red();
+        //     });
+            
+
+
+        // $(document).ready(function(){
+        //     $("p:last-child").addClass("red");
+        // });
+    </script>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>i love you</p>
+        <p>tea</p>
+
+    </div>
+</body>
+
+</html>

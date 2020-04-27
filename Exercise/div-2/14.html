@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration:none;
+    }
+    body{
+        background-color: rgb(247, 234, 164);
+    }
+    .wrap{
+        width: 960px;
+        margin:0 auto;
+       
+    }
+    .box{
+        width:960px;
+        height: 100px;
+        background-color: #000;
+        clear: both;
+        color:#fff;
+        text-align: center;
+    }
+    .timeline{
+        padding:100px 0;
+        
+    }
+    .timeline li{
+        width:50%;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .timeline li:last-child{
+        margin-bottom: 110px;
+    }
+    .timeline li:nth-child(odd){
+        float: left;
+        padding-right:100px;
+    }
+    .timeline li:nth-child(even){
+        float: right;
+        padding-left: 100px;
+        transform: translateY(50%);
+    }
+    .timeline li:nth-child(odd)::after{
+        content:'';
+        top:0;
+        right:0;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #000;
+        z-index: -1;
+        
+    }
+    .timeline li:last-child::after{
+        height: 50%;
+        
+    }
+    .timeline li:nth-child(odd)::before {
+        content:'';
+        position: absolute;
+        width:21px;
+        height:21px;
+        border-radius: 50%;
+        background-color: #999;
+        right: -10px;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+      
+        
+    }
+    .timeline li:nth-child(even)::before{
+        content:'';
+        position: absolute;
+        width:21px;
+        height:21px;
+        border-radius: 50%;
+        background-color: #999;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+        left: -11px;
+   
+       
+    }
+
+    .timeline a{
+        display: block;
+        border:1px solid rgb(250, 223, 223);
+        background-color: rgb(179, 245, 245);
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+    .timeline a:hover{
+        background-color: black;
+    }
+    
+    .timeline a:hover h2,
+    .timeline a:hover p{
+        color:#fff;
+    }
+    .timeline h2 {
+        color:#222;
+        
+    }
+    .timeline h2::after{
+        content:'';
+        position: absolute;
+        z-index: -1;
+        width: 100px;;
+        height: 1px;
+        background-color:black;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+    }
+    .timeline li:nth-child(odd) h2::after{
+        right: 0px;
+    }
+    .timeline li:nth-child(even) h2::after{
+        left: 0;
+    }
+    .timeline p{
+        color:#999;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="wrap">
+        <h1>標題1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolor expedita excepturi ex distinctio molestiae vel voluptates illo fugit incidunt modi earum quis ipsa reiciendis dolore facere, voluptate consequuntur. Autem!</p>
+        <ul class="timeline">
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>故事一</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore repudiandae rerum dolores at non ipsum, itaque minus, vitae voluptate nesciunt amet ad mollitia praesentium distinctio voluptatem aliquid ducimus eaque.</p>
+                </a>
+            </li>
+        </ul>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos sunt optio dolore nam, aliquam repellendus non magni vitae iste magnam impedit ea. Quas tenetur dicta inventore rem nam fugiat.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

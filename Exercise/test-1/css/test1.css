@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 50px;
+  padding: 0px 0px 0px 30px;
+}
+
+body .box {
+  width: 480px;
+  background-color: #88da88;
+  height: 480px;
+}
+
+body .box .container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #ce82d1;
+}
+
+body .box .container a {
+  color: #0059ff;
+}
+
+body .box .container a:hover {
+  color: red;
+}
+/*# sourceMappingURL=test1.css.map */

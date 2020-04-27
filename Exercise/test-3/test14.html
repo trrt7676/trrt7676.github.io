@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Tabs - Default functionality</title>
+    <style>
+        #tabs {
+            width: 800px;
+            margin: 0 auto;
+            font-family: '微軟正黑體';
+
+
+        }
+
+        #tabs ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+        }
+
+        #tabs ul li a {
+            text-decoration: none;
+        }
+
+        .color {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li>
+                <a href="#">登樂遊原</a>
+            </li>
+            <li>
+                <a href="#">問劉十九</a>
+            </li>
+            <li>
+                <a href="#"> 落 花</a>
+            </li>
+            <li>
+                <a href="#">早 寒 有 懷</a>
+            </li>
+            <li>
+                <a href="#">旅 夜 書 懷</a>
+            </li>
+            <li>
+                <a href="#">月 夜 憶 舍 弟</a>
+            </li>
+        </ul>
+        <div id="tabs-1">
+            <p>向 晚 意 不 適 ， 　驅 車 登 古 原 。 夕 陽 無 限 好 ， 　只 是 近 黃 昏 。</p>
+
+
+        </div>
+        <div id="tabs-2">
+            <p>綠 螘 新 醅 酒 ， 　紅 泥 小 火 爐 。 晚 來 天 欲 雪 ， 　能 飲 一 杯 無 ？</p>
+        </div>
+        <div id="tabs-3">
+            高 閣 客 竟 去 ， 　小 園 花 亂 飛 。 參 差 連 曲 陌 ， 　迢 遞 送 斜 暉 。 腸 斷 未 忍 掃 ， 　眼 穿 仍 欲 歸 。 芳 心 向 春 盡 ， 　所 得 是 沾 衣 。
+            </p>
+        </div>
+        <div id="tabs-4">
+            <p>木 落 雁 南 渡 ， 　北 風 江 上 寒 。 我 家 襄 水 曲 ， 　遙 隔 楚 雲 端 。 鄉 淚 客 中 盡 ， 　孤 帆 天 際 看 。 迷 津 欲 有 問 ， 　平 海 夕 漫 漫 。
+            </p>
+        </div>
+        <div id="tabs-5">
+            <p>細 草 微 風 岸 ， 　危 檣 獨 夜 舟 。 星 垂 平 野 闊 ， 　月 湧 大 江 流 。 名 豈 文 章 著 ， 　官 應 老 病 休 。 飄 飄 何 所 似 ， 　天 地 一 沙 鷗 。
+            </p>
+        </div>
+        <div id="tabs-6">
+            <p>戍 鼓 斷 人 行 ， 　邊 秋 一 雁 聲 。 露 從 今 夜 白 ， 　月 是 故 鄉 明 。 有 弟 皆 分 散 ， 　無 家 問 死 生 。 寄 書 長 不 達 ， 　況 乃 未 休 兵 。
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $("#tabs>div:not(:eq(0))").hide();
+            $("#tabs li a").click(function (e) {
+
+                e.preventDefault();
+                $("#tabs li a").removeClass('color');
+                $(this).addClass('color');
+                var n = $(this).parent().index();
+                $("#tabs>div").hide().eq(n).show(function () {
+
+                });
+
+
+            });
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>

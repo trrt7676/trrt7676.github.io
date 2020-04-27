@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>console.log練習</title>
+</head>
+
+<body>
+    <div class="btn">可以按我</div>
+    <div class="btn1"></div>
+
+    <script>
+        var btn = document.querySelector('.btn');
+        var btn1 = document.querySelector('.btn1');
+        var a = 0;
+
+        btn.onclick = function () {
+
+            // for (let index = 0; index < 1; index++) {}
+
+
+
+                if (a < 5) {
+                    a++
+                    btn.innerHTML = '可以再按我';
+                    btn1.innerHTML = `按了 ${a} 次`
+                    console.log('這是第' + a + '次');
+                }else if(a>5){
+                    alert('只到5次，別按囉')
+                }else {
+                    a++
+                    btn1.innerHTML = `超過5次了喔`
+                    console.log('超過5次了')
+                    
+                }
+                
+          
+        }
+
+
+
+    </script>
+</body>
+
+</html>

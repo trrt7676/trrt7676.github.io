@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排版練習</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        font-family:"微軟正黑體";
+    }
+  
+    .wrap{
+        position:relative;
+        width:100%;
+    }
+    header{
+        background-color:rgb(243, 205, 145);       
+        padding:30px 0;
+    }
+    nav{
+        background:linear-gradient(to right,#a85858,#691c1c);
+        box-shadow:0px 0px 10px #000;
+        
+    }
+    .float{
+        padding-left:260px;
+        padding-right:10px;
+        position:relative;
+        background-color:blueviolet;
+        height:460px;
+        width:730px;
+        margin:0 auto;
+        border-radius:5px;
+        padding-top:40px;
+    }
+    .left{
+        background-color:#fff;
+        width:200px;
+        height:560px;
+        position:absolute;
+        top:-100px;
+        left:0px;
+        padding:20px;
+        border-radius:5px;
+        background-image:url(img/5.jpg);
+        background-size:240px auto;
+        background-repeat:no-repeat;
+        background-position:0 100%;
+        
+    }
+    .left img{
+        width:100%;
+    }
+   
+    .fu{
+        text-align: center;
+        padding: 70px 0;
+    }
+    .float h3{
+        text-align:center;
+        
+
+    }
+    .float p {
+        margin:70px;
+        text-indent: 2em;
+    }
+    .menu{
+        width:1000px;
+        margin:0 auto;
+        display: flex;
+        justify-content: flex-end;
+        height:40px;
+    }
+   
+    .menu ul{
+        list-style: none;
+        display: flex;
+    }
+    .menu ul li a{
+        display: block;
+        width:50px;
+        margin-right:5px;
+        color:beige;
+        text-decoration:none;
+        line-height:40px;
+        
+    }
+    footer{
+        
+        background-color:#000000;
+        color:#fff;
+        text-align: center;
+    }
+    .foot{
+        width:800px;
+        margin:0 auto;
+       
+    }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="javascript:;">日記</a></li>
+                    <li><a href="javascript:;">無言</a></li>
+                    <li><a href="javascript:;">水果</a></li>
+                    <li><a href="javascript:;">支柱</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="float">
+        <h3>寶可夢</h3>
+        <p>黃色雙足人型寶可夢。它在進化後鬍子變得更長，耳朵變得更尖更長，頭上的符號沒了。由於胡地腦細胞的無限增長，它的額頭變得更寬更為光亮。據說年紀越大的胡地腦袋也就越大。胸部和肩部依舊如同包裹在褐色的盔甲中一樣，手腕部分多了兩個狀似護腕的褐色物體，手長著三根手指，雙手均持有一把勺子。足部變得更為粗壯，膝蓋上有類似護膝的褐色部分，使得它更為有力。胡地沒有尾巴。
+
+            超級進化後的胡地，身上的鎧甲部分變為了紫色的法袍。整體的顏色不變，額頭正中增多了一塊紅色的晶體，頭頂生出尖角，黃色的小鬍子變成了蒼白的巨大鬍子。兩隻腳拼在一起，並運用超能力使自己浮在空中。勺子的數量再次增到了五把，不再握在手中，而是被超能力托舉到了空中。</p>
+
+
+
+
+        <div class="left">
+            <img src="img/1.png" alt="">
+            <div class="fu">有些事情，真的不容易。</div>
+            
+
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+        網頁製作練習
+
+
+        </div>
+        
+    </footer>
+</div>
+</body>
+</html>

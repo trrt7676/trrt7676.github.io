@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: '微軟正黑體';
+    }
+    header{
+        width: 100%;
+        background: linear-gradient(90deg,green,lightcoral);
+    }
+    header nav{
+        max-width:800px;
+        height: 80px;
+        margin:0 auto ;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    nav a{
+        position: relative;
+    }
+    nav a img{
+        width:83px;
+        position: absolute;
+        top: -28px;
+        left: -22px;
+    }
+    nav .nav{
+        display: flex;
+      
+    }
+    nav .nav a{
+      
+        text-decoration:none;
+        color:indigo;
+        transform:translateY(0);
+        transition:.5s;
+        margin:0 20px;
+    }
+    nav .nav a:nth-child(3){
+       margin-left:103px;
+    }
+    nav .nav a:hover{
+        transform:translateY(-5px);
+    }
+    nav .nav a:after{
+        content:'';
+        position:absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        border-bottom: 1px solid rgb(106, 47, 241);
+        transition:.5s;
+    }
+    nav .nav a:hover:after{
+        left: 0;
+        right: 0;
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="img/LOGO.png" alt="">
+            </a>
+            <div class="nav">
+                <a href="#">porduct</a>
+                <a href="#">about</a>
+                <a href="#">home</a>
+                <a href="#">map</a>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

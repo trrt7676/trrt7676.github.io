@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+*{	padding:0;
+	margin:0;
+	}
+body{
+	background-color:#efe5ce;
+	text-decoration: none;
+	}
+.menuBTN,.linkBAR {
+	display: none;
+}
+.imgResponsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+header{
+	width:100%;
+	height:160px;
+	background:#ffb57e;
+	border-bottom:1px solid #AAAAAA;
+	margin-bottom:4px;
+	
+	}
+header img {
+	margin-left:10%;
+	
+	
+	}
+.box1{
+	width:100%;
+	
+	}
+header ul{
+	list-style:none;
+	float:right;
+	padding:90px 10% 0 0;
+	}
+header ul li{
+	float:left;
+	
+	}
+header ul li a{
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-size:18px;
+	font-family:"微軟正黑體";
+	margin-right:30px;
+	color:#000000;
+	}
+header ul li a:hover{
+	color:#923B00;
+	text-decoration:none;
+	}
+.box1 img{
+	width:32%;
+	height:auto;
+	
+	}
+.box3{
+	background-color:#7d0000;
+	height:80px;
+	width:100%;
+	
+	}
+.cont{
+	width:900px;
+	margin:0 auto;
+	
+	}
+.box3 h3{
+	font-size:30px;
+	line-height:80px;
+	color:#FFFFFF;
+	margin-left:10%;
+	font-family:"微軟正黑體";
+	}
+.box2{
+	background-color:#cfa972;
+	height:230px;
+	
+	}
+.box2 img{
+	
+	
+	}
+h4{
+	padding-top:20px;
+	}
+.wall{
+	padding-top:30px;
+	}
+.wall-1,.wall-2,.wall-3{
+	display:block;
+	text-decoration:none;
+	float:left;
+	color:#000000;
+	width:33%;
+	text-align:center;
+	font-family:"微軟正黑體";
+	}
+	
+	.excellent,.flavor{
+		width:450px;
+		float:left;
+		text-align:center;
+		font-family:"微軟正黑體";
+		font-size:20px;
+		}
+		
+	.excellent h2,.flavor h2{
+		
+		}	
+		
+		
+footer{
+	clear:both;
+	background-color:#1b1b1b;
+	height:450px;
+	
+	
+	}
+footer iframe{
+	margin-left:40px ;
+	margin-top:40px ;}
+.aa{
+	margin-left:40px;
+	}
+footer p {
+	color:#FFFFFF;
+	font-size:16px;
+	font-family:"微軟正黑體";
+	}
+
+.top a{
+	display:block;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	line-height:46px;
+	color:#FFFFFF;
+	border:3px solid #800002;
+	text-decoration:none;
+	font-size:18px;
+	position:fixed;
+	right:5%;
+	bottom:5%;
+	text-align:center;
+	background-color:#000000;
+	}
+@media screen and (max-width:790px){
+	
+	header ul{
+	display:none;
+	
+	}
+	.menuBTN{
+	display:block;
+	margin-top:60px;
+	margin-right:7%;
+	font-size:40px;
+	text-decoration:none;
+	color:#000000;
+	float:right;
+	
+}
+	a.icon-menu{
+	text-decoration:none;
+	color:#000000;
+	}
+	.menuBTN:hover{
+	color:#000000;
+	text-decoration:none;
+	}
+	.cont{
+	width:100%;
+		
+		}
+	.linkBAR li a{
+		float:none;
+		display:block;
+		width:100%;
+		height:50px;
+		line-height:50px;
+		border-bottom:1px solid #FFFFFF;
+		background-color:#000000;
+		color:#FFFFFF;
+		text-align:center;
+		text-decoration:none;
+		font-family:"微軟正黑體";
+		font-size:22px;
+		}
+	.linkBAR li a:hover{
+			color:#ffb57e
+			
+			}
+	header img {
+	margin-left:10%;
+	margin-top:40px;
+	width:86px;
+	height:83px;
+	
+	}	
+	footer iframe{
+	margin-left:40px ;
+	margin-top:40px ;
+	width:400px;
+	}
+	.box1 img{
+	width:32%;
+	height:auto;
+	
+	}
+	.excellent,.flavor{
+		width:100%;
+		text-align:center;
+		font-family:"微軟正黑體";
+		
+		}
+	.wall-1,.wall-2,.wall-3{
+	display:block;
+	text-decoration:none;
+	float:none;
+	color:#000000;
+	width:100%;
+	text-align:center;
+	font-family:"微軟正黑體";
+	}
+	.box2{
+	background-color:#cfa972;
+	height:auto;
+	padding-bottom:20px;
+	}
+	}

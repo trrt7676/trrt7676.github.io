@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .floatr {
+            width: 350px;
+            height: 350px;
+            background-color: #888;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .float {
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: #777;
+            position: relative;
+            clear: left;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border-radius: 50%;
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(103, 230, 19);
+            position: absolute;
+            top: calc(50% - 100px);
+            right: calc(50% - 100px);
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="float">
+        <div class="box">
+        </div>
+    </div>
+    <div class="floatr">
+        <div class="box2">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>
+
+        var box = document.querySelector('.box')
+        var box2 = document.querySelector('.box2')
+
+        var box_centerX = box.offsetLeft
+        box_centerX += 50
+
+        var box_centerY = box.offsetTop
+        box_centerY += 50
+
+
+
+
+        var offsetX;
+        var offsetY;
+
+        var offsetX2;
+        var offsetY2;
+
+        var left = document.querySelector('.float');
+        var right = document.querySelector('.floatr');
+
+        var windowvw = $(window).width();
+        
+
+       
+
+        // window.onresize = function(){
+        // var width_vw= document.body.offsetWidth
+        // console.log("JS"+width_vw)
+        // }
+
+
+            left.onmousemove = function (event) {
+
+                let nowPosiotionX = event.pageX;
+                let nowPosiotionY = event.pageY;
+
+                offsetX = nowPosiotionX - box_centerX
+                offsetY = nowPosiotionY - box_centerY
+
+                box.style.transform = `translate(${offsetX /= 5}px , ${offsetY /= 5}px)`
+                
+            }
+            right.onmousemove = function (event) {
+
+                
+            $(window).resize(function () {
+            var windowvw = $(window).width();
+            let nowPosiotionX = event.pageX;
+            let nowPosiotionY = event.pageY;
+            
+
+            var box_centerX2 = box2.offsetLeft
+            box_centerX2 +=windowvw-250;
+
+           console.log(box_centerX2)
+            });
+            var box_centerX2 = box2.offsetLeft
+            box_centerX2 +=windowvw-250;
+
+            var box_centerY2 = box2.offsetTop
+            box_centerY2 += 100
+
+                let nowPosiotionX = event.pageX;
+                let nowPosiotionY = event.pageY;
+
+                offsetX2 = nowPosiotionX - box_centerX2
+                offsetY2 = nowPosiotionY - box_centerY2
+
+                box2.style.transform = `translate(${offsetX2 /= 1}px , ${offsetY2 /= 1}px)`
+
+            }
+
+
+
+
+
+
+      
+
+
+
+
+
+    </script>
+</body>
+
+</html>

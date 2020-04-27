@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: '微軟正黑體';
+    }
+    ul{
+        width:960px;
+        margin:auto;
+        padding: 100px 0;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul li{
+        width:200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        
+        margin:0 60px -40px;
+        position: relative;
+        font-size: 40px;
+        
+    }
+    ul li::before{
+        content:'';
+        position: absolute;
+        z-index: -1;
+       
+        width:100%;
+        height:100%;
+        top:0;left:0;
+        transform: rotate(45deg);
+        
+
+    }
+    ul li:nth-child(n+4){
+        left:160px;
+    }
+    ul li:nth-child(n+7){
+        left:0;
+    }
+    .box1::before{background-color: #a432a6}
+    .box2::before{background-color: #527734}
+    .box3::before{background-color: #762545}
+    .box4::before{background-color: #563672}
+    .box5::before{background-color: #767334}
+    .box6::before{background-color: #237875}
+    .box7::before{background-color: #125677}
+    .box8::before{background-color: #953644}
+    .box9::before{background-color: #825456}
+    li:hover {
+        color:#fff;
+    }
+  
+    
+    li:hover::before{
+        background-color: #14d35d;
+    }
+ 
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="box1">獸類</li>
+        <li class="box2">神族</li>
+        <li class="box3">妖精</li>
+        <li class="box4">機械族</li>
+        <li class="box5">龍族</li>
+        <li class="box6">魔族</li>
+        <li class="box7">人類</li>
+        <li class="box8">text</li>
+        <li class="box9">text</li>
+    </ul>
+</body>
+</html>

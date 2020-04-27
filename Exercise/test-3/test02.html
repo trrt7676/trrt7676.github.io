@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>點擊換圖片</title>
+	<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.box{
+		width:600px;
+		margin: 0 auto;
+	}
+	.simg{
+		display: flex;
+		justify-content: space-between;
+	}
+	</style>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$(".simg img").click(function () {
+
+				var n = $(this).attr("data-order");
+				$(".bigimg").attr("src", "img/box" + n + "-s.jpg");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="box">
+
+		<img src="img/box1-s.jpg" width="600" class="bigimg" alt="" />
+
+
+		<div class="simg">
+			<img src="img/box1.jpg" width="150" data-order="1" alt="" />
+			<img src="img/box2.jpg" width="150" data-order="2" alt="" />
+			<img src="img/box3.jpg" width="150" data-order="3" alt="" />
+		</div>
+
+	</div>
+</body>
+
+</html>
