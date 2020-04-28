@@ -10,6 +10,10 @@ $header_top.find('a').on('click', function() {
   $(this).parent().toggleClass('open-menu');
 });
 
+$('#menu li').on('click', function() {
+  $('.header-top').toggleClass('open-menu');
+});
+
 
 
 // fullpage customization
@@ -22,6 +26,10 @@ $('#fullpage').fullpage({
   controlArrows: false,
   anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
   menu: '#menu',
+  responsiveWidth: 900,
+  afterResponsive: function(isResponsive){
+
+  },
 
   afterLoad: function(anchorLink, index) {
     $header_top.css('background', 'rgba(0, 47, 77, .3)');
