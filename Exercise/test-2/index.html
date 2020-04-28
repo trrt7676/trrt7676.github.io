@@ -29,10 +29,13 @@
         }
         .txt{
             width:230px;
-            
+            border-radius: 10px;
+            border: 3px solid brown;
             background-color: #000;
             color:#fff;
+            overflow: hidden;
             text-align: center;
+            margin-bottom: 10px;
         }
         .txt p{
             margin: 15px;
@@ -92,7 +95,7 @@
                 box.innerHTML +=`
                 <div class="txt">
                     <img src="${imgw}" alt="">
-                    <p>縣市:${name}</p>
+                    <h3>縣市:${name}</h3>
                     <p>最高溫:${max}度</p>
                     <p>最低溫:${min}度</p>
                     <p>感覺如何:${ci}</p>
