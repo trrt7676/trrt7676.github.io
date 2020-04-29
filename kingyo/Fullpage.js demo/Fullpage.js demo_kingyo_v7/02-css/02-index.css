@@ -1026,8 +1026,22 @@ footer p {
 
     .about .txt {
         width: 100%;
-    }
+        /* 要一張圖........................ */
+       background-color: red;
+        background-size: cover;
+        background-position: center;
 
+        
+        position: unset;
+        left: 0;
+        top: 0;
+        transform: unset;
+
+    }
+    .about img {
+        display: none;
+    }
+   
     #menu li .lemon{
         max-width: 70px;
     }
