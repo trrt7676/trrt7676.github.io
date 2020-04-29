@@ -1008,7 +1008,13 @@ footer p {
 }
 
 @media ( max-width:992px ){
+    body{
+        padding-right: 0 !important;
+    }
     section{
+        overflow: hidden;
+    }
+    #fullpage{
         overflow: hidden;
     }
     .banner .title {
