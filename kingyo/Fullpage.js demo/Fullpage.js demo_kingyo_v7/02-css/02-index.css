@@ -626,6 +626,10 @@
 .porductfloat p{
     font-size: 16px;
 }
+.product330{
+    height: 330px;
+}
+
 
 .modal-title{
     text-align: center;
@@ -1004,12 +1008,71 @@ footer p {
 }
 
 @media ( max-width:992px ){
+    section{
+        overflow: hidden;
+    }
+    .banner .title {
+        font-size: 100px;
+        transform: unset;
+        animation:unset;
+        letter-spacing: unset;
+    }
+    .about .txt {
+        width: 100%;
+        /* 要一張圖........................ */
+        background: url('../img/green-tea.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+        position: unset;
+        left: 0;
+        top: 0;
+        transform: unset;
+
+    }
+    .about img {
+        display: none;
+    }
+    .product330{
+        width:220px;
+        height: 220px;
+    }
+    .point, .addblock {
+        background-color: #82828265;}
+    .business .txt {
+        width: 100%;
+        /* 要一張圖........................ */
+        background: url('../img/plant.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        position: unset;
+        left: 0;
+        top: 0;
+        transform: unset !important;
+
+    }
+
+    .pointfloat .modal-content p, .addblockfloat .modal-content p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .pointfloat .modal-content, .addblockfloat .modal-content {
+        top:300px !important;
+    }
+    .business img {
+        display: none;
+    }
     .point{
-        transform: translate(4%,-250%);
+        transform: unset;
+        margin: 0 auto 20px;
     }
 
     .addblock{
-        transform: translate(4%,-200%);
+        transform: unset;
     }
 
     .pointfloat,.addblockfloat{
@@ -1027,9 +1090,10 @@ footer p {
     .about .txt {
         width: 100%;
         /* 要一張圖........................ */
-       background-color: red;
-        background-size: cover;
+        background: url('../img/green-tea.png');
+        background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
 
         
         position: unset;
