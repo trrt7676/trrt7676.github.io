@@ -1084,6 +1084,18 @@ footer p {
     .pointfloat,.addblockfloat{
         transform: translateY(-60%);
     }
+    .top{
+        display: block;
+        width:70px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1;
+    }
+
+    .top img{
+        width:100%;
+    }
 }
 
 @media ( max-width:768px ){
@@ -1138,7 +1150,7 @@ footer p {
     .top{
         display: block;
         width:70px;
-        position: absolute;
+        position: fixed;
         right: 10px;
         bottom: 10px;
         z-index: 1;

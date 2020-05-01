@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myId {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        #childId{
+            widows: 100px;
+            height: 100px;
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="myId"></div> -->
+    <script>
+        var node = {
+            tagName: 'div',
+            attributes: [{ 'id': 'myId' }],
+            children: []
+        };
+
+        node.children.push({
+            tagName: 'div',
+            attributes: [{ 'id': 'childId' }],
+            children: []
+        });
+
+        update(originalNode, node);
+    </script>
+</body>
+
+</html>
