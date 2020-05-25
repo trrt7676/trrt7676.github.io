@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  max-height: 100vh;
+}
+
+header .container-fluid {
+  padding: 0 !important;
+}
+
+header section.title {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+header section.title nav {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: '微軟正黑體';
+}
+
+header section.title nav a {
+  color: #fff;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+header section.title .name {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section.title .name h1 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+header section.title .name p {
+  color: #777;
+}
+
+header section.portfolio {
+  width: 100%;
+  height: 100%;
+}
+
+header section.portfolio .pic img {
+  width: 100%;
+}
+
+header section.portfolio .txt {
+  max-height: 40%;
+  padding: 50px 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header section.meaning {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header section.meaning .txt {
+  width: 100%;
+  min-height: 30%;
+  padding: 50px 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header section.meaning .time {
+  width: 100%;
+  height: 70%;
+  background-color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section.meaning .time .time_box {
+  width: 50%;
+  height: 70%;
+  border: 2px solid #fff;
+}
+
+header section.meaning .time .time_box h2 {
+  color: #fff;
+  background-color: #222;
+  -webkit-transform: translate(50%, 100%);
+          transform: translate(50%, 100%);
+  font-size: 26px;
+}
+
+header section.meaning .time .time_box h2 span {
+  font-size: 0.5em;
+}
+/*# sourceMappingURL=index.css.map */

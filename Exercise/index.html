@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-
+    <link rel="stylesheet" href="css/index.css">
     <title>作品</title>
     <style>
         * {
@@ -43,7 +44,21 @@
            text-align: center;
            margin:auto;
         }
-
+@media screen and (max-width: 800px) {
+    .pic {
+            width:100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+        }
+        .pic img{
+           width:70%;
+           height: auto;
+           text-align: center;
+           margin:auto;
+        }
+    
+}
         .container ul li {
             margin-bottom: 15px;
         }
@@ -61,26 +76,13 @@
         .container a:hover {
             color: brown;
         }
+        
+       
        
     </style>
 </head>
 
 <body>
-
-    <div class="container">
-        <h1></h1>
-        <ul>
-            <li><a target="_blank" href="http://trrt7676.github.io/flower">個人專題Flower Pack</a></li>
-            <li><a target="_blank" href="http://trrt7676.github.io/Exercise/parallax/index.html">視差卷軸練習</a></li>
-            <li><a target="_blank" href="http://trrt7676.github.io/Exercise/facebook/index.html">facebook切版練習</a></li>
-            <li><a target="_blank" href="http://trrt7676.github.io/Exercise/rwd/index.html">Media Query練習</a></li>
-            <li><a target="_blank" href="http://trrt7676.github.io/Exercise/test-1/index.html">蛋糕網站練習</a></li>
-            <li><a target="_blank" href="http://trrt7676.github.io/Exercise/test-2/index.html">天氣API 練習</a></li>
-            <li><a target="_blank" href="http://trrt7676.github.io/Exercise/test-3/index.html">雞排網站練習</a></li>
-        </ul>
-    </div>
-
-
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background:#888">
@@ -130,17 +132,77 @@
             </div>
             
         </div>
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
-        <!-- Add Arrows -->
+        Add Pagination
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        Add Arrows
         <div class="swiper-button-next swiper-button-white"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
     </div>
 
+    <header>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12 col-lg-4">
+                    <section class="title">
+                        <nav>
+                           <a href="#"><div>遺憾</div></a> 
+                           <a href="#"><div>過去</div></a> 
+                           <a href="#"><div>現在</div></a> 
+                           <a href="#"><div>未來</div></a> 
+                           <a href="#"><div>夢想</div></a> 
+                        </nav>
+                        <div class="name">
+                            <h1>JOE</h1>
+                            <p>既沒有天分，也不夠努力，那還能做什麼呢？</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <section class="portfolio">
+                        <div class="txt">
+                            <h2>About me</h2>
+                            <p>關於..</p>
+                            <p>
+                                <ul>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/flower">個人專題Flower Pack</a></li>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/Exercise/parallax/index.html">視差卷軸練習</a></li>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/Exercise/facebook/index.html">facebook切版練習</a></li>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/Exercise/rwd/index.html">Media Query練習</a></li>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/Exercise/test-1/index.html">蛋糕網站練習</a></li>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/Exercise/test-2/index.html">天氣API 練習</a></li>
+                                    <li><a target="_blank" href="http://trrt7676.github.io/Exercise/test-3/index.html">雞排網站練習</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <section class="meaning">
+                        <div class="time order-lg-1">
+                            <div class="time_box">
+                                <h2>PORTFOLIO</h2>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <h2>Dream</h2>
+                            <p>心安理得</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
 
-    <a href="http://trrt7676.github.io/Exercise/index.html">
-        <div class="home">Home</div>
-    </a>
+    </header>
+
+    
+
+
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
